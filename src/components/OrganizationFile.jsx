@@ -19,9 +19,9 @@ const ELEMENTS = [
         isSelectable: true,
         name: "faculty_advisors",
         children: [
-          { id: "3", isSelectable: true, name: "dr_srivani_p.mdx" },
-          { id: "4", isSelectable: true, name: "dr_bharathi_r.mdx" },
-          { id: "5", isSelectable: true, name: "dr_durga_bhavani.mdx" },
+          { id: "3", isSelectable: true, name: "dr_srivani_p.pfp" },
+          { id: "4", isSelectable: true, name: "dr_bharathi_r.pfp" },
+          { id: "5", isSelectable: true, name: "dr_durga_bhavani.pfp" },
         ],
       },
       {
@@ -34,12 +34,12 @@ const ELEMENTS = [
             isSelectable: true,
             name: "leadership",
             children: [
-              { id: "8", isSelectable: true, name: "arindam.mdx (Advisor)" },
-              { id: "9", isSelectable: true, name: "sayandeep.mdx (Advisor)" },
-              { id: "10", isSelectable: true, name: "dhamini.mdx (Advisor)" },
-              { id: "11", isSelectable: true, name: "rishith.mdx (Chair)" },
-              { id: "12", isSelectable: true, name: "neha_h.mdx (Vice Chair)" },
-              { id: "13", isSelectable: true, name: "abhinav_singh.mdx (Co Chair)" },
+              { id: "8", isSelectable: true, name: "arindam.pfp (Advisor)" },
+              { id: "9", isSelectable: true, name: "sayandeep.pfp (Advisor)" },
+              { id: "10", isSelectable: true, name: "dhamini.pfp (Advisor)" },
+              { id: "11", isSelectable: true, name: "rishith.pfp (Chair)" },
+              { id: "12", isSelectable: true, name: "neha_h.pfp (Vice Chair)" },
+              { id: "13", isSelectable: true, name: "abhinav_singh.pfp (Co Chair)" },
             ],
           },
           {
@@ -47,9 +47,9 @@ const ELEMENTS = [
             isSelectable: true,
             name: "administration",
             children: [
-              { id: "15", isSelectable: true, name: "aditi_d.mdx (Chief Secretary)" },
-              { id: "16", isSelectable: true, name: "adwit.mdx (Secretary)" },
-              { id: "17", isSelectable: true, name: "mujawar_zaid.mdx (Treasurer)" },
+              { id: "15", isSelectable: true, name: "aditi_d.pfp (Chief Secretary)" },
+              { id: "16", isSelectable: true, name: "adwit.pfp (Secretary)" },
+              { id: "17", isSelectable: true, name: "mujawar_zaid.pfp (Treasurer)" },
             ],
           },
           {
@@ -62,9 +62,9 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "web_development",
                 children: [
-                  { id: "20", isSelectable: true, name: "anurag.mdx (Head)" },
-                  { id: "21", isSelectable: true, name: "marmik_jain.mdx (Associate)" },
-                  { id: "22", isSelectable: true, name: "ansu_kumar.mdx (Associate)" },
+                  { id: "20", isSelectable: true, name: "anurag.pfp (Head)" },
+                  { id: "21", isSelectable: true, name: "marmik_jain.pfp (Associate)" },
+                  { id: "22", isSelectable: true, name: "ansu_kumar.pfp (Associate)" },
                 ],
               },
               {
@@ -72,10 +72,10 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "technical_team",
                 children: [
-                  { id: "24", isSelectable: true, name: "priyanka_h_navale.mdx (Head)" },
-                  { id: "25", isSelectable: true, name: "mehul_paul.mdx (Co-Head)" },
-                  { id: "26", isSelectable: true, name: "samarth_pasalkar.mdx (Associate)" },
-                  { id: "27", isSelectable: true, name: "ananya_gupta.mdx (Associate)" },
+                  { id: "24", isSelectable: true, name: "priyanka_h_navale.pfp (Head)" },
+                  { id: "25", isSelectable: true, name: "mehul_paul.pfp (Co-Head)" },
+                  { id: "26", isSelectable: true, name: "samarth_pasalkar.pfp (Associate)" },
+                  { id: "27", isSelectable: true, name: "ananya_gupta.pfp (Associate)" },
                 ],
               },
               {
@@ -83,9 +83,9 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "event_organizing",
                 children: [
-                  { id: "29", isSelectable: true, name: "m_chaitanya_pannegar.mdx (Head)" },
-                  { id: "30", isSelectable: true, name: "bhoomika_r.mdx (Event Coordinator)" },
-                  { id: "31", isSelectable: true, name: "rakshan.mdx (Event Coordinator)" },
+                  { id: "29", isSelectable: true, name: "m_chaitanya_pannegar.pfp (Head)" },
+                  { id: "30", isSelectable: true, name: "bhoomika_r.pfp (Event Coordinator)" },
+                  { id: "31", isSelectable: true, name: "rakshan.pfp (Event Coordinator)" },
                 ],
               },
               {
@@ -93,11 +93,11 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "marketing_team",
                 children: [
-                  { id: "33", isSelectable: true, name: "asish.mdx (Head)" },
-                  { id: "34", isSelectable: true, name: "i_g_chirag.mdx (Associate)" },
-                  { id: "35", isSelectable: true, name: "srushti_k.mdx (Associate)" },
-                  { id: "36", isSelectable: true, name: "kushal_raj_g_s.mdx (Associate)" },
-                  { id: "37", isSelectable: true, name: "shree_gowri.mdx (Associate)" },
+                  { id: "33", isSelectable: true, name: "asish.pfp (Head)" },
+                  { id: "34", isSelectable: true, name: "i_g_chirag.pfp (Associate)" },
+                  { id: "35", isSelectable: true, name: "srushti_k.pfp (Associate)" },
+                  { id: "36", isSelectable: true, name: "kushal_raj_g_s.pfp (Associate)" },
+                  { id: "37", isSelectable: true, name: "shree_gowri.pfp (Associate)" },
                 ],
               },
               {
@@ -105,10 +105,10 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "social_media",
                 children: [
-                  { id: "39", isSelectable: true, name: "nisha.mdx (Head)" },
-                  { id: "40", isSelectable: true, name: "pranathi_shetty.mdx (Associate)" },
-                  { id: "41", isSelectable: true, name: "nisha_nandisha.mdx (Associate)" },
-                  { id: "42", isSelectable: true, name: "abdullah.mdx (Associate-Blog writer)" },
+                  { id: "39", isSelectable: true, name: "nisha.pfp (Head)" },
+                  { id: "40", isSelectable: true, name: "pranathi_shetty.pfp (Associate)" },
+                  { id: "41", isSelectable: true, name: "nisha_nandisha.pfp (Associate)" },
+                  { id: "42", isSelectable: true, name: "abdullah.pfp (Associate-Blog writer)" },
                 ],
               },
               {
@@ -116,8 +116,8 @@ const ELEMENTS = [
                 isSelectable: true,
                 name: "public_relations",
                 children: [
-                  { id: "44", isSelectable: true, name: "charuvi_suresh.mdx (Associate)" },
-                  { id: "45", isSelectable: true, name: "devesh_kumar_singh.mdx (Associate)" },
+                  { id: "44", isSelectable: true, name: "charuvi_suresh.pfp (Associate)" },
+                  { id: "45", isSelectable: true, name: "devesh_kumar_singh.pfp (Associate)" },
                 ],
               },
             ],
@@ -195,7 +195,7 @@ function Iphone15ProDemo({ member }) {
 
 export function SectionWithFlickerBehindTree() {
 
-  const initialSelectedId = "20"; // anurag.mdx
+  const initialSelectedId = "20"; // anurag.pfp
 
   function findMemberById(node, id) {
     if (node.id === id) return node;
@@ -279,65 +279,65 @@ export function SectionWithFlickerBehindTree() {
             {/* JSX structure reflecting the same hierarchy */}
             <Folder element="arvr_club" value="1">
               <Folder element="faculty_advisors" value="2">
-                <File value="3"><p>dr_srivani_p.mdx</p></File>
-                <File value="4"><p>dr_bharathi_r.mdx</p></File>
-                <File value="5"><p>dr_durga_bhavani.mdx</p></File>
+                <File value="3"><p>dr_srivani_p.pfp</p></File>
+                <File value="4"><p>dr_bharathi_r.pfp</p></File>
+                <File value="5"><p>dr_durga_bhavani.pfp</p></File>
               </Folder>
 
               <Folder element="core_team" value="6">
                 <Folder element="leadership" value="7">
-                  <File value="8"><p>arindam.mdx (Advisor)</p></File>
-                  <File value="9"><p>sayandeep.mdx (Advisor)</p></File>
-                  <File value="10"><p>dhamini.mdx (Advisor)</p></File>
-                  <File value="11"><p>rishith.mdx (Chair)</p></File>
-                  <File value="12"><p>neha_h.mdx (Vice Chair)</p></File>
-                  <File value="13"><p>abhinav_singh.mdx (Co Chair)</p></File>
+                  <File value="8"><p>arindam.pfp (Advisor)</p></File>
+                  <File value="9"><p>sayandeep.pfp (Advisor)</p></File>
+                  <File value="10"><p>dhamini.pfp (Advisor)</p></File>
+                  <File value="11"><p>rishith.pfp (Chair)</p></File>
+                  <File value="12"><p>neha_h.pfp (Vice Chair)</p></File>
+                  <File value="13"><p>abhinav_singh.pfp (Co Chair)</p></File>
                 </Folder>
 
                 <Folder element="administration" value="14">
-                  <File value="15"><p>aditi_d.mdx (Chief Secretary)</p></File>
-                  <File value="16"><p>adwit.mdx (Secretary)</p></File>
-                  <File value="17"><p>mujawar_zaid.mdx (Treasurer)</p></File>
+                  <File value="15"><p>aditi_d.pfp (Chief Secretary)</p></File>
+                  <File value="16"><p>adwit.pfp (Secretary)</p></File>
+                  <File value="17"><p>mujawar_zaid.pfp (Treasurer)</p></File>
                 </Folder>
 
                 <Folder element="sub_divisions" value="18">
                   <Folder element="web_development" value="19">
-                    <File value="20"><p>anurag.mdx (Head)</p></File>
-                    <File value="21"><p>marmik_jain.mdx (Associate)</p></File>
-                    <File value="22"><p>ansu_kumar.mdx (Associate)</p></File>
+                    <File value="20"><p>anurag.pfp (Head)</p></File>
+                    <File value="21"><p>marmik_jain.pfp (Associate)</p></File>
+                    <File value="22"><p>ansu_kumar.pfp (Associate)</p></File>
                   </Folder>
 
                   <Folder element="technical_team" value="23">
-                    <File value="24"><p>priyanka_h_navale.mdx (Head)</p></File>
-                    <File value="25"><p>mehul_paul.mdx (Co-Head)</p></File>
-                    <File value="26"><p>samarth_pasalkar.mdx (Associate)</p></File>
-                    <File value="27"><p>ananya_gupta.mdx (Associate)</p></File>
+                    <File value="24"><p>priyanka_h_navale.pfp (Head)</p></File>
+                    <File value="25"><p>mehul_paul.pfp (Co-Head)</p></File>
+                    <File value="26"><p>samarth_pasalkar.pfp (Associate)</p></File>
+                    <File value="27"><p>ananya_gupta.pfp (Associate)</p></File>
                   </Folder>
 
                   <Folder element="event_organizing" value="28">
-                    <File value="29"><p>m_chaitanya_pannegar.mdx (Head)</p></File>
-                    <File value="30"><p>bhoomika_r.mdx (Event Coordinator)</p></File>
-                    <File value="31"><p>rakshan.mdx (Event Coordinator)</p></File>
+                    <File value="29"><p>m_chaitanya_pannegar.pfp (Head)</p></File>
+                    <File value="30"><p>bhoomika_r.pfp (Event Coordinator)</p></File>
+                    <File value="31"><p>rakshan.pfp (Event Coordinator)</p></File>
                   </Folder>
 
                   <Folder element="marketing_team" value="32">
-                    <File value="33"><p>asish.mdx (Head)</p></File>
-                    <File value="34"><p>i_g_chirag.mdx (Associate)</p></File>
-                    <File value="35"><p>srushti_k.mdx (Associate)</p></File>
-                    <File value="36"><p>kushal_raj_g_s.mdx (Associate)</p></File>
-                    <File value="37"><p>shree_gowri.mdx (Associate)</p></File>
+                    <File value="33"><p>asish.pfp (Head)</p></File>
+                    <File value="34"><p>i_g_chirag.pfp (Associate)</p></File>
+                    <File value="35"><p>srushti_k.pfp (Associate)</p></File>
+                    <File value="36"><p>kushal_raj_g_s.pfp (Associate)</p></File>
+                    <File value="37"><p>shree_gowri.pfp (Associate)</p></File>
                   </Folder>
 
                   <Folder element="social_media" value="38">
-                    <File value="39"><p>nisha.mdx (Head)</p></File>
-                    <File value="40"><p>pranathi_shetty.mdx (Associate)</p></File>
-                    <File value="41"><p>nisha_nandisha.mdx (Associate)</p></File>
-                    <File value="42"><p>abdullah.mdx (Associate-Blog writer)</p></File>
+                    <File value="39"><p>nisha.pfp (Head)</p></File>
+                    <File value="40"><p>pranathi_shetty.pfp (Associate)</p></File>
+                    <File value="41"><p>nisha_nandisha.pfp (Associate)</p></File>
+                    <File value="42"><p>abdullah.pfp (Associate-Blog writer)</p></File>
                   </Folder>
 
                   <Folder element="public_relations" value="43">
-                    <File value="44"><p>charuvi_suresh.mdx (Associate)</p></File>
-                    <File value="45"><p>devesh_kumar_singh.mdx (Associate)</p></File>
+                    <File value="44"><p>charuvi_suresh.pfp (Associate)</p></File>
+                    <File value="45"><p>devesh_kumar_singh.pfp (Associate)</p></File>
                   </Folder>
                 </Folder>
               </Folder>
