@@ -3,18 +3,32 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Favicon (use your club logo in public folder) -->
+  <link rel="icon" type="image/png" href="%BASE_URL%ARVRHubLogo.png" />
+
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;700&family=Inter:wght@400;600&family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React</title>
+
+  <!-- SEO / Social -->
+  <title>ARVR Hub BMSIT</title>
+  <meta name="description"
+    content="ARVR Hub BMSIT - Explore Augmented & Virtual Reality projects and events at BMSIT." />
+  <meta property="og:title" content="ARVR Hub BMSIT" />
+  <meta property="og:description" content="Explore Augmented & Virtual Reality projects and events at BMSIT." />
+  <meta property="og:image" content="%BASE_URL%logo.png" />
+  <meta property="og:type" content="website" />
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Main React entry -->
+  <script type="module" src="%BASE_URL%src/main.jsx"></script>
 </body>
 
 </html>
