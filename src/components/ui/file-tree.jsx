@@ -35,7 +35,7 @@ const Tree = forwardRef(({
    openIcon,
    closeIcon,
    dir,
-  onSelect,
+   onSelect,
    ...props
  }, ref) => {
    const [selectedId, setSelectedId] = useState(initialSelectedId);
@@ -43,9 +43,8 @@ const Tree = forwardRef(({
 
    const selectItem = useCallback((id) => {
      setSelectedId(id);
-    if (onSelect) onSelect(id); // notify parent
+     if (onSelect) onSelect(id); // notify parent
    }, [onSelect]);
-
 
   const handleExpand = useCallback((id) => {
     setExpandedItems((prev) => {
@@ -57,35 +56,33 @@ const Tree = forwardRef(({
   }, []);
 
   const expandSpecificTargetedElements = useCallback((elements, selectId) => {
-  if (!elements || !selectId) return;
+    if (!elements || !selectId) return;
 
-  const findParent = (currentElement, currentPath) => {
-    // Ensure currentPath is always an array
-    const path = Array.isArray(currentPath) ? currentPath : [];
-    const newPath = [...path, currentElement.id];
+    const findParent = (currentElement, currentPath) => {
+      const path = Array.isArray(currentPath) ? currentPath : [];
+      const newPath = [...path, currentElement.id];
 
-    const isSelectable = currentElement.isSelectable ?? true;
+      const isSelectable = currentElement.isSelectable ?? true;
 
-    if (currentElement.id === selectId) {
-      if (isSelectable) {
-        setExpandedItems((prev) => [...(prev ?? []), ...newPath]);
-      } else {
-        if (newPath.includes(currentElement.id)) {
-          newPath.pop();
+      if (currentElement.id === selectId) {
+        if (isSelectable) {
           setExpandedItems((prev) => [...(prev ?? []), ...newPath]);
+        } else {
+          if (newPath.includes(currentElement.id)) {
+            newPath.pop();
+            setExpandedItems((prev) => [...(prev ?? []), ...newPath]);
+          }
         }
+        return;
       }
-      return;
-    }
 
-    if (isSelectable && currentElement.children && currentElement.children.length > 0) {
-      currentElement.children.forEach((child) => findParent(child, newPath));
-    }
-  };
+      if (isSelectable && currentElement.children && currentElement.children.length > 0) {
+        currentElement.children.forEach((child) => findParent(child, newPath));
+      }
+    };
 
-  elements.forEach((el) => findParent(el)); // pass only element, path defaults handled
-}, []);
-
+    elements.forEach((el) => findParent(el));
+  }, []);
 
   useEffect(() => {
     if (initialSelectedId) {
@@ -110,7 +107,6 @@ const Tree = forwardRef(({
       }}
     >
       <div className={cn("size-full", className)}>
-        {/* Fixed ScrollArea usage */}
         <ScrollArea.Root ref={ref} className="relative h-full" dir={dir}>
           <ScrollArea.Viewport className="h-full w-full px-2">
             <AccordionPrimitive.Root
@@ -130,7 +126,6 @@ const Tree = forwardRef(({
     </TreeContext.Provider>
   );
 });
-
 
 Tree.displayName = "Tree";
 
@@ -176,13 +171,19 @@ const Folder = forwardRef((
   return (
     <AccordionPrimitive.Item {...props} value={value} className="relative h-full overflow-hidden">
       <AccordionPrimitive.Trigger
-        className={cn(`flex items-center gap-1 rounded-md text-sm`, className, {
-          "bg-muted rounded-md": isSelect && isSelectable,
-          "cursor-pointer": isSelectable,
-          "cursor-not-allowed opacity-50": !isSelectable,
-        })}
+        className={cn(
+          `flex items-center gap-1 rounded-md text-sm transition-colors duration-300`, // smooth color transition
+          className,
+          {
+            "bg-[#6B46C1] hover:bg-[#805AD5] rounded-md": isSelect && isSelectable, // selected + hover
+            "hover:bg-[#4C1D95]": !isSelect && isSelectable, // hover effect when not selected
+            "cursor-pointer": isSelectable,
+            "cursor-not-allowed opacity-50": !isSelectable,
+          }
+        )}
         disabled={!isSelectable}
-        onClick={() => handleExpand(value)}>
+        onClick={() => handleExpand(value)}
+      >
         {expandedItems?.includes(value)
           ? (openIcon ?? <FolderOpenIcon className="size-4" />)
           : (closeIcon ?? <FolderIcon className="size-4" />)}
@@ -230,9 +231,10 @@ const File = forwardRef((
       type="button"
       disabled={!isSelectable}
       className={cn(
-        "flex w-fit items-center gap-1 rounded-md pr-1 text-sm duration-200 ease-in-out rtl:pl-1 rtl:pr-0",
+        "flex w-fit items-center gap-1 rounded-md pr-1 text-sm transition-colors duration-300 ease-in-out rtl:pl-1 rtl:pr-0",
         {
-          "bg-muted": isSelected && isSelectable,
+          "bg-[#6B46C1] hover:bg-[#805AD5]": isSelected && isSelectable, // selected + hover
+          "hover:bg-[#4C1D95]": !isSelected && isSelectable, // hover effect when not selected
         },
         isSelectable ? "cursor-pointer" : "cursor-not-allowed opacity-50",
         direction === "rtl" ? "rtl" : "ltr",
@@ -240,7 +242,7 @@ const File = forwardRef((
       )}
       onClick={() => {
         selectItem(value);
-}}
+      }}
       {...props}>
       {fileIcon ?? <FileIcon className="size-4" />}
       {children}
@@ -270,7 +272,6 @@ const CollapseButton = forwardRef(({ className, elements, expandAll = false, chi
   }, []);
 
   useEffect(() => {
-    console.log(expandAll);
     if (expandAll) {
       expendAllTree(elements);
     }

@@ -194,39 +194,41 @@ function Iphone15ProDemo({ member }) {
 }
 
 export function SectionWithFlickerBehindTree() {
-  const [selectedMember, setSelectedMember] = useState(null);
+
+  const initialSelectedId = "20"; // anurag.mdx
 
   function findMemberById(node, id) {
-  if (node.id === id) return node;
+    if (node.id === id) return node;
 
-  if (node.children) {
-    for (const child of node.children) {
-      const result = findMemberById(child, id);
-      if (result) return result;
+    if (node.children) {
+      for (const child of node.children) {
+        const result = findMemberById(child, id);
+        if (result) return result;
+      }
+    }
+
+    return null;
+  }
+
+  const [selectedMember, setSelectedMember] = useState(() => findMemberById(members, initialSelectedId));
+
+  
+
+  function handleSelect(payload) {
+    console.log("Tree onSelect payload:", payload);
+
+    // If payload is just the id (string)
+    const id = typeof payload === "string" ? payload : payload?.id;
+
+    const member = findMemberById(members, id);
+    console.log("Matched member:", member);
+
+    if (member && member.image) {
+      setSelectedMember(member);
+    } else {
+      setSelectedMember(null);
     }
   }
-
-  return null;
-}
-
-function handleSelect(payload) {
-  console.log("Tree onSelect payload:", payload);
-
-  // If payload is just the id (string)
-  const id = typeof payload === "string" ? payload : payload?.id;
-
-  const member = findMemberById(members, id);
-  console.log("Matched member:", member);
-
-  if (member && member.image) {
-    setSelectedMember(member);
-  } else {
-    setSelectedMember(null);
-  }
-}
-
-
-
 
   return (
     <section className="relative flex w-full py-10 px-10 gap-10">
