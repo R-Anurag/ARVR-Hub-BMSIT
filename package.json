@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "node deploy.cjs"
+    "preview": "vite preview"
   },
 
   "dependencies": {
