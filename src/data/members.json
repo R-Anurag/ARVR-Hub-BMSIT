@@ -1,0 +1,402 @@
+{
+  "id": "1",
+  "name": "arvr_club",
+  "children": [
+    {
+      "id": "2",
+      "name": "faculty_advisors",
+      "children": [
+        {
+          "id": "3",
+          "name": "dr_srivani_p.mdx",
+          "image": "/members/faculty/dr_srivani_p.png",
+          "linkedin": "",
+          "github": "",
+          "instagram": "",
+          "email": "",
+          "role": "Advisor"
+        },
+        {
+          "id": "4",
+          "name": "dr_bharathi_r.mdx",
+          "image": "/members/faculty/dr_bharathi_r.png",
+          "linkedin": "",
+          "github": "",
+          "instagram": "",
+          "email": "",
+          "role": "Advisor"
+        },
+        {
+          "id": "5",
+          "name": "dr_durga_bhavani.mdx",
+          "image": "/members/faculty/dr_durga_bhavani.png",
+          "linkedin": "",
+          "github": "",
+          "instagram": "",
+          "email": "",
+          "role": "Advisor"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "core_team",
+      "children": [
+        {
+          "id": "7",
+          "name": "leadership",
+          "children": [
+            {
+              "id": "8",
+              "name": "arindam.mdx",
+              "image": "/members/core_team/leadership/arindam.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Advisor"
+            },
+            {
+              "id": "9",
+              "name": "sayandeep.mdx",
+              "image": "/members/core_team/leadership/sayandeep.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Advisor"
+            },
+            {
+              "id": "10",
+              "name": "dhamini.mdx",
+              "image": "/members/core_team/leadership/dhamini.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Advisor"
+            },
+            {
+              "id": "11",
+              "name": "rishith.mdx",
+              "image": "/members/core_team/leadership/rishith.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Chair"
+            },
+            {
+              "id": "12",
+              "name": "neha_h.mdx",
+              "image": "/members/core_team/leadership/neha_h.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Vice Chair"
+            },
+            {
+              "id": "13",
+              "name": "abhinav_singh.mdx",
+              "image": "/members/core_team/leadership/abhinav_singh.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Co Chair"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "name": "administration",
+          "children": [
+            {
+              "id": "15",
+              "name": "aditi_d.mdx",
+              "image": "/members/core_team/administration/aditi_d.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Chief Secretary"
+            },
+            {
+              "id": "16",
+              "name": "adwit.mdx",
+              "image": "/members/core_team/administration/adwit.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Secretary"
+            },
+            {
+              "id": "17",
+              "name": "mujawar_zaid.mdx",
+              "image": "/members/core_team/administration/mujawar_zaid.png",
+              "linkedin": "",
+              "github": "",
+              "instagram": "",
+              "email": "",
+              "role": "Treasurer"
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "name": "sub_divisions",
+          "children": [
+            {
+              "id": "19",
+              "name": "web_development",
+              "children": [
+                {
+                  "id": "20",
+                  "name": "anurag.mdx",
+                  "image": "/members/core_team/web_development/anurag.png",
+                  "linkedin": "https://www.linkedin.com/in/r-anurag",
+                  "github": "https://github.com/R-Anurag",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Head"
+                },
+                {
+                  "id": "21",
+                  "name": "marmik_jain.mdx",
+                  "image": "/members/core_team/web_development/marmik_jain.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "22",
+                  "name": "ansu_kumar.mdx",
+                  "image": "/members/core_team/web_development/ansu_kumar.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                }
+              ]
+            },
+            {
+              "id": "23",
+              "name": "technical_team",
+              "children": [
+                {
+                  "id": "24",
+                  "name": "priyanka_h_navale.mdx",
+                  "image": "/members/core_team/technical_team/priyanka_h_navale.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Head"
+                },
+                {
+                  "id": "25",
+                  "name": "mehul_paul.mdx",
+                  "image": "/members/core_team/technical_team/mehul_paul.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Co-Head"
+                },
+                {
+                  "id": "26",
+                  "name": "samarth_pasalkar.mdx",
+                  "image": "/members/core_team/technical_team/samarth_pasalkar.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "27",
+                  "name": "ananya_gupta.mdx",
+                  "image": "/members/core_team/technical_team/ananya_gupta.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                }
+              ]
+            },
+            {
+              "id": "28",
+              "name": "event_organizing",
+              "children": [
+                {
+                  "id": "29",
+                  "name": "m_chaitanya_pannegar.mdx",
+                  "image": "/members/core_team/event_organizing/m_chaitanya.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Head"
+                },
+                {
+                  "id": "30",
+                  "name": "bhoomika_r.mdx",
+                  "image": "/members/core_team/event_organizing/bhoomika_r.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Event Coordinator"
+                },
+                {
+                  "id": "31",
+                  "name": "rakshan.mdx",
+                  "image": "/members/core_team/event_organizing/rakshan.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Event Coordinator"
+                }
+              ]
+            },
+            {
+              "id": "32",
+              "name": "marketing_team",
+              "children": [
+                {
+                  "id": "33",
+                  "name": "asish.mdx",
+                  "image": "/members/core_team/marketing_team/asish.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Head"
+                },
+                {
+                  "id": "34",
+                  "name": "i_g_chirag.mdx",
+                  "image": "/members/core_team/marketing_team/ig_chirag.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "35",
+                  "name": "srushti_k.mdx",
+                  "image": "/members/core_team/marketing_team/srushti_k.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "36",
+                  "name": "kushal_raj_g_s.mdx",
+                  "image": "/members/core_team/marketing_team/kushal_raj_g_s.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "37",
+                  "name": "shree_gowri.mdx",
+                  "image": "/members/core_team/marketing_team/shree_gowri.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                }
+              ]
+            },
+            {
+              "id": "38",
+              "name": "social_media",
+              "children": [
+                {
+                  "id": "39",
+                  "name": "nisha.mdx",
+                  "image": "/members/core_team/social_media/nisha.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Head"
+                },
+                {
+                  "id": "40",
+                  "name": "pranathi_shetty.mdx",
+                  "image": "/members/core_team/social_media/pranathi_shetty.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "41",
+                  "name": "nisha_nandisha.mdx",
+                  "image": "/members/core_team/social_media/nisha_nandisha.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "42",
+                  "name": "abdullah.mdx",
+                  "image": "/members/core_team/social_media/abdullah.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate-Blog writer"
+                }
+              ]
+            },
+            {
+              "id": "43",
+              "name": "public_relations",
+              "children": [
+                {
+                  "id": "44",
+                  "name": "charuvi_suresh.mdx",
+                  "image": "/members/core_team/public_relations/charuvi_suresh.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                },
+                {
+                  "id": "45",
+                  "name": "devesh_kumar_singh.mdx",
+                  "image": "/members/core_team/public_relations/devesh_kumar_singh.png",
+                  "linkedin": "",
+                  "github": "",
+                  "instagram": "",
+                  "email": "",
+                  "role": "Associate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

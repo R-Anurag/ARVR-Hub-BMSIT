@@ -1,0 +1,167 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+
+/* Sidebar Hover-Fill */
+.menu-hover-fill {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hover-fill li {
+    position: relative;
+}
+
+.menu-hover-fill li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    width: 0.25rem;
+    height: 100%;
+    background: var(--active-color, #9560EB);
+    transition: left 0.6s;
+}
+
+.menu-hover-fill li a {
+    --menu-link-color: #9ca3af;
+    background: linear-gradient(var(--active-color, #9560EB) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-size 0.45s 0.04s;
+    position: relative;
+}
+
+.menu-hover-fill li a::before {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    color: var(--menu-link-color);
+}
+
+.menu-hover-fill li:hover::before {
+    left: calc(100% + 1rem);
+}
+
+.menu-hover-fill li:hover a {
+    background-size: 100%;
+}
+
+.menu-hover-fill li.active a {
+    background-size: 100%;
+    --active-color: #B48CDE;
+}
+
+/* Neon Grid Background */
+@keyframes gridShift {
+    0% {
+        background-position: 0 0, 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 100px 100px, 100px 100px, 100px 100px, 100px 100px;
+    }
+}
+
+.teams-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(0deg, #fff 1px, transparent 1px),
+        linear-gradient(90deg, #fff 1px, transparent 1px),
+        linear-gradient(45deg, #B48CDE 1px, transparent 1px),
+        linear-gradient(135deg, #14B8A6 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridShift 10s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(1px);
+    opacity: 0.3;
+}
+
+/* Profile Card */
+.card {
+    position: relative;
+    --background: #3C3B3D;
+    --text: white;
+    overflow: hidden;
+}
+
+/* Member Image - B&W by default, color on hover */
+.card img.member-img {
+    width: 10rem;
+    /* adjust as needed */
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 3rem;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: grayscale(100%);
+    /* black and white */
+}
+
+.card:hover img.member-img {
+    transform: scale(1.1);
+    /* existing hover scale */
+    filter: grayscale(0%);
+    /* full color on hover */
+}
+
+/* Social buttons panel - slide up + grow horizontally */
+.multi-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+    transition: all 0.35s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Hover: expand + slide */
+.card:hover .multi-button {
+    width: 60%;
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Social buttons */
+.social-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #B48CDE;
+    /* matches card accent color */
+    background: rgba(60, 59, 61, 0.7);
+    /* semi-transparent dark, matches card bg */
+    color: #B48CDE;
+    /* accent color for icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px rgba(180, 140, 222, 0.4);
+}
+
+.social-btn:hover {
+    background: #B48CDE;
+    /* glow accent on hover */
+    color: #1e1e1e;
+    /* dark icon on bright hover */
+    box-shadow: 0 0 12px rgba(180, 140, 222, 0.7);
+    transform: scale(1.1);
+}
