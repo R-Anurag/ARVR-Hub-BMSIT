@@ -9,4 +9,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // for GitHub Pages
+  base: '/ARVR-Hub-BMSIT/', // repo name
 })
