@@ -12,7 +12,7 @@ const CharacterSequence = () => {
   const obj = useRef({ frame: 0 });
 
   const currentFrame = (index) =>
-    `/characterImages/ezgif-frame-${String(index).padStart(3, "0")}.png`;
+    `characterImages/ezgif-frame-${String(index).padStart(3, "0")}.png`;
 
   useEffect(() => {
     const canvas = canvasRef.current;
