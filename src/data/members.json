@@ -8,7 +8,7 @@
       "children": [
         {
           "id": "3",
-          "name": "dr_srivani_p.mdx",
+          "name": "dr_srivani_p.pfp",
           "image": "members/faculty/dr_srivani_p.png",
           "linkedin": "",
           "github": "",
@@ -18,7 +18,7 @@
         },
         {
           "id": "4",
-          "name": "dr_bharathi_r.mdx",
+          "name": "dr_bharathi_r.pfp",
           "image": "members/faculty/dr_bharathi_r.png",
           "linkedin": "",
           "github": "",
@@ -28,7 +28,7 @@
         },
         {
           "id": "5",
-          "name": "dr_durga_bhavani.mdx",
+          "name": "dr_durga_bhavani.pfp",
           "image": "members/faculty/dr_durga_bhavani.png",
           "linkedin": "",
           "github": "",
@@ -48,7 +48,7 @@
           "children": [
             {
               "id": "8",
-              "name": "arindam.mdx",
+              "name": "arindam.pfp",
               "image": "members/core_team/leadership/arindam.png",
               "linkedin": "",
               "github": "",
@@ -58,7 +58,7 @@
             },
             {
               "id": "9",
-              "name": "sayandeep.mdx",
+              "name": "sayandeep.pfp",
               "image": "members/core_team/leadership/sayandeep.png",
               "linkedin": "",
               "github": "",
@@ -68,7 +68,7 @@
             },
             {
               "id": "10",
-              "name": "dhamini.mdx",
+              "name": "dhamini.pfp",
               "image": "members/core_team/leadership/dhamini.png",
               "linkedin": "",
               "github": "",
@@ -78,7 +78,7 @@
             },
             {
               "id": "11",
-              "name": "rishith.mdx",
+              "name": "rishith.pfp",
               "image": "members/core_team/leadership/rishith.png",
               "linkedin": "",
               "github": "",
@@ -88,7 +88,7 @@
             },
             {
               "id": "12",
-              "name": "neha_h.mdx",
+              "name": "neha_h.pfp",
               "image": "members/core_team/leadership/neha_h.png",
               "linkedin": "",
               "github": "",
@@ -98,7 +98,7 @@
             },
             {
               "id": "13",
-              "name": "abhinav_singh.mdx",
+              "name": "abhinav_singh.pfp",
               "image": "members/core_team/leadership/abhinav_singh.png",
               "linkedin": "",
               "github": "",
@@ -114,7 +114,7 @@
           "children": [
             {
               "id": "15",
-              "name": "aditi_d.mdx",
+              "name": "aditi_d.pfp",
               "image": "members/core_team/administration/aditi_d.png",
               "linkedin": "",
               "github": "",
@@ -124,7 +124,7 @@
             },
             {
               "id": "16",
-              "name": "adwit.mdx",
+              "name": "adwit.pfp",
               "image": "members/core_team/administration/adwit.png",
               "linkedin": "",
               "github": "",
@@ -134,7 +134,7 @@
             },
             {
               "id": "17",
-              "name": "mujawar_zaid.mdx",
+              "name": "mujawar_zaid.pfp",
               "image": "members/core_team/administration/mujawar_zaid.png",
               "linkedin": "",
               "github": "",
@@ -154,7 +154,7 @@
               "children": [
                 {
                   "id": "20",
-                  "name": "anurag.mdx",
+                  "name": "anurag.pfp",
                   "image": "members/core_team/web_development/anurag.png",
                   "linkedin": "https://www.linkedin.com/in/r-anurag",
                   "github": "https://github.com/R-Anurag",
@@ -164,7 +164,7 @@
                 },
                 {
                   "id": "21",
-                  "name": "marmik_jain.mdx",
+                  "name": "marmik_jain.pfp",
                   "image": "members/core_team/web_development/marmik_jain.png",
                   "linkedin": "",
                   "github": "",
@@ -174,7 +174,7 @@
                 },
                 {
                   "id": "22",
-                  "name": "ansu_kumar.mdx",
+                  "name": "ansu_kumar.pfp",
                   "image": "members/core_team/web_development/ansu_kumar.png",
                   "linkedin": "",
                   "github": "",
@@ -190,7 +190,7 @@
               "children": [
                 {
                   "id": "24",
-                  "name": "priyanka_h_navale.mdx",
+                  "name": "priyanka_h_navale.pfp",
                   "image": "members/core_team/technical_team/priyanka_h_navale.png",
                   "linkedin": "",
                   "github": "",
@@ -200,7 +200,7 @@
                 },
                 {
                   "id": "25",
-                  "name": "mehul_paul.mdx",
+                  "name": "mehul_paul.pfp",
                   "image": "members/core_team/technical_team/mehul_paul.png",
                   "linkedin": "",
                   "github": "",
@@ -210,7 +210,7 @@
                 },
                 {
                   "id": "26",
-                  "name": "samarth_pasalkar.mdx",
+                  "name": "samarth_pasalkar.pfp",
                   "image": "members/core_team/technical_team/samarth_pasalkar.png",
                   "linkedin": "",
                   "github": "",
@@ -220,7 +220,7 @@
                 },
                 {
                   "id": "27",
-                  "name": "ananya_gupta.mdx",
+                  "name": "ananya_gupta.pfp",
                   "image": "members/core_team/technical_team/ananya_gupta.png",
                   "linkedin": "",
                   "github": "",
@@ -236,7 +236,7 @@
               "children": [
                 {
                   "id": "29",
-                  "name": "m_chaitanya_pannegar.mdx",
+                  "name": "m_chaitanya_pannegar.pfp",
                   "image": "members/core_team/event_organizing/m_chaitanya.png",
                   "linkedin": "",
                   "github": "",
@@ -246,7 +246,7 @@
                 },
                 {
                   "id": "30",
-                  "name": "bhoomika_r.mdx",
+                  "name": "bhoomika_r.pfp",
                   "image": "members/core_team/event_organizing/bhoomika_r.png",
                   "linkedin": "",
                   "github": "",
@@ -256,7 +256,7 @@
                 },
                 {
                   "id": "31",
-                  "name": "rakshan.mdx",
+                  "name": "rakshan.pfp",
                   "image": "members/core_team/event_organizing/rakshan.png",
                   "linkedin": "",
                   "github": "",
@@ -272,7 +272,7 @@
               "children": [
                 {
                   "id": "33",
-                  "name": "asish.mdx",
+                  "name": "asish.pfp",
                   "image": "members/core_team/marketing_team/asish.png",
                   "linkedin": "",
                   "github": "",
@@ -282,7 +282,7 @@
                 },
                 {
                   "id": "34",
-                  "name": "i_g_chirag.mdx",
+                  "name": "i_g_chirag.pfp",
                   "image": "members/core_team/marketing_team/ig_chirag.png",
                   "linkedin": "",
                   "github": "",
@@ -292,7 +292,7 @@
                 },
                 {
                   "id": "35",
-                  "name": "srushti_k.mdx",
+                  "name": "srushti_k.pfp",
                   "image": "members/core_team/marketing_team/srushti_k.png",
                   "linkedin": "",
                   "github": "",
@@ -302,7 +302,7 @@
                 },
                 {
                   "id": "36",
-                  "name": "kushal_raj_g_s.mdx",
+                  "name": "kushal_raj_g_s.pfp",
                   "image": "members/core_team/marketing_team/kushal_raj_g_s.png",
                   "linkedin": "",
                   "github": "",
@@ -312,7 +312,7 @@
                 },
                 {
                   "id": "37",
-                  "name": "shree_gowri.mdx",
+                  "name": "shree_gowri.pfp",
                   "image": "members/core_team/marketing_team/shree_gowri.png",
                   "linkedin": "",
                   "github": "",
@@ -328,7 +328,7 @@
               "children": [
                 {
                   "id": "39",
-                  "name": "nisha.mdx",
+                  "name": "nisha.pfp",
                   "image": "members/core_team/social_media/nisha.png",
                   "linkedin": "",
                   "github": "",
@@ -338,7 +338,7 @@
                 },
                 {
                   "id": "40",
-                  "name": "pranathi_shetty.mdx",
+                  "name": "pranathi_shetty.pfp",
                   "image": "members/core_team/social_media/pranathi_shetty.png",
                   "linkedin": "",
                   "github": "",
@@ -348,7 +348,7 @@
                 },
                 {
                   "id": "41",
-                  "name": "nisha_nandisha.mdx",
+                  "name": "nisha_nandisha.pfp",
                   "image": "members/core_team/social_media/nisha_nandisha.png",
                   "linkedin": "",
                   "github": "",
@@ -358,7 +358,7 @@
                 },
                 {
                   "id": "42",
-                  "name": "abdullah.mdx",
+                  "name": "abdullah.pfp",
                   "image": "members/core_team/social_media/abdullah.png",
                   "linkedin": "",
                   "github": "",
@@ -374,7 +374,7 @@
               "children": [
                 {
                   "id": "44",
-                  "name": "charuvi_suresh.mdx",
+                  "name": "charuvi_suresh.pfp",
                   "image": "members/core_team/public_relations/charuvi_suresh.png",
                   "linkedin": "",
                   "github": "",
@@ -384,7 +384,7 @@
                 },
                 {
                   "id": "45",
-                  "name": "devesh_kumar_singh.mdx",
+                  "name": "devesh_kumar_singh.pfp",
                   "image": "members/core_team/public_relations/devesh_kumar_singh.png",
                   "linkedin": "",
                   "github": "",
