@@ -15,7 +15,7 @@ function flattenTeamData(node) {
     if (section.children && section.children.every(child => child.image)) {
       // Leaf-level members
       result[section.name] = section.children.map(member => ({
-        name: member.name.replace(".mdx", "").replace(/_/g, " "), // Cleaned name
+        name: member.name.replace(".pfp", "").replace(/_/g, " "), // Cleaned name
         role: member.role || "", // Role comes directly from JSON (blank if missing)
         img: member.image,
         linkedin: member.linkedin,
@@ -101,12 +101,12 @@ export default function LegacyTeams() {
                     >
                       <div className="relative w-64 h-64">
                         <img
-                          src="/profileFrames/frame1.png"
+                          src="profileFrames/frame1.png"
                           alt="Frame"
                           className="object-contain w-full h-full absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
                         />
                         <img
-                          src="/profileFrames/frame2.png"
+                          src="profileFrames/frame2.png"
                           alt="Frame Hover"
                           className="object-contain w-full h-full absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                         />
