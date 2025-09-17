@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,6 +10,7 @@ const CharacterSequence = () => {
   const canvasRef = useRef(null);
   const images = useRef([]);
   const obj = useRef({ frame: 0 });
+  const [loading, setLoading] = useState(true); // optional loading state
 
   const currentFrame = (index) =>
     `characterImages/ezgif-frame-${String(index).padStart(3, "0")}.png`;
@@ -18,12 +19,23 @@ const CharacterSequence = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 
-    // preload images
-    for (let i = 1; i <= frameCount; i++) {
-      const img = new Image();
-      img.src = currentFrame(i);
-      images.current.push(img);
-    }
+    // Preload images and wait until all are loaded
+    const loadImages = async () => {
+      const promises = [];
+      for (let i = 1; i <= frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+        images.current.push(img);
+
+        // Wrap image load in a promise
+        const promise = new Promise((resolve) => {
+          img.onload = resolve;
+          img.onerror = resolve; // resolve even if image fails
+        });
+        promises.push(promise);
+      }
+      await Promise.all(promises);
+    };
 
     const drawFrame = (frame) => {
       const img = images.current[frame];
@@ -57,50 +69,45 @@ const CharacterSequence = () => {
       canvas.height = window.innerHeight;
       drawFrame(Math.floor(obj.current.frame));
     };
-    setCanvasSize();
-    window.addEventListener("resize", setCanvasSize);
 
-    const scrollAnim = gsap.to(obj.current, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-      scrollTrigger: {
-        trigger: canvas.parentElement,
-        start: "top top",
-        end: () => `+=${window.innerHeight * 2}`,
-        scrub: 0.2,
-        pin: canvas,
-        anticipatePin: 1, // ✅ smooth pin transition
-      },
-      onUpdate: () => drawFrame(Math.floor(obj.current.frame)),
-    });
+    const initAnimation = async () => {
+      await loadImages(); // wait for all frames
+      setLoading(false); // hide loading indicator
 
-    // // optional fade-in polish
-    // gsap.fromTo(
-    //   canvas,
-    //   { opacity: 0 },
-    //   {
-    //     opacity: 1,
-    //     duration: 0.5,
-    //     scrollTrigger: {
-    //       trigger: canvas.parentElement,
-    //       start: "top+=50 top", // fade in just before pin
-    //       end: "top top",
-    //       scrub: true,
-    //     },
-    //   }
-    // );
+      setCanvasSize();
+      window.addEventListener("resize", setCanvasSize);
 
-    return () => {
-      window.removeEventListener("resize", setCanvasSize);
-      if (scrollAnim.scrollTrigger) scrollAnim.scrollTrigger.kill();
+      const scrollAnim = gsap.to(obj.current, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        scrollTrigger: {
+          trigger: canvas.parentElement,
+          start: "top top",
+          end: () => `+=${window.innerHeight * 2}`,
+          scrub: 0.2,
+          pin: canvas,
+          anticipatePin: 1, // smooth pin transition
+        },
+        onUpdate: () => drawFrame(Math.floor(obj.current.frame)),
+      });
+
+      return () => {
+        window.removeEventListener("resize", setCanvasSize);
+        if (scrollAnim.scrollTrigger) scrollAnim.scrollTrigger.kill();
+      };
     };
+
+    initAnimation();
   }, []);
 
   return (
-    <div
-      className="relative bg-black"
-    >
+    <div className="relative bg-black">
+      {loading && (
+        <div className="absolute inset-0 flex justify-center items-center text-white text-xl z-10">
+          Loading animation...
+        </div>
+      )}
       <canvas ref={canvasRef} className="sticky top-0 w-full h-screen"></canvas>
     </div>
   );
