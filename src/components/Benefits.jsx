@@ -71,19 +71,18 @@ export default function Benefits() {
 
         {/* Right Column → Join Message */}
         <motion.div
-          className="w-full md:w-[35%] flex flex-col justify-center text-left gap-4 md:gap-6"
+          className="w-full md:w-[35%] flex flex-col justify-center text-center md:text-left gap-6 md:gap-8"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         >
-          <h3 className="text-3xl md:text-5xl font-orbitron text-[#EEEEEE] text-left">
-            Thinking <br /> About <br /> Joining Us?
+          <h3 className="text-3xl md:text-5xl font-orbitron text-[#EEEEEE]">
+            Wondering <br /> About <br /> Membership perks?
           </h3>
           <p className="text-gray-400 leading-relaxed">
-            We’d love to have you onboard. Whether you’re a beginner or an
-            experienced developer, our club offers a supportive environment to
-            learn, create, and innovate. Join us to turn your ideas into
-            reality and be part of the next generation of AR/VR pioneers!
+            Whether you’re just starting out or already
+            experienced, the AR/VR Club gives you the tools and community to
+            experiment, grow, and shape the future of immersive technology!
           </p>
         </motion.div>
       </div>

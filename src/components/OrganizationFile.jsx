@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import { Linkedin, Instagram, Github, Mail } from "lucide-react"; 
+import { Linkedin, Instagram, Github, Mail, ChevronRight } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import { File, Folder, Tree } from "@/components/ui/file-tree";
 import { Iphone15Pro } from "@/components/ui/iphone-15-pro";
 import { NavLink } from "react-router-dom";
-import { ChevronRight } from "lucide-react";
 import members from "@/data/members.json";
+import { motion } from "framer-motion";
 
 const ELEMENTS = [
   {
@@ -129,12 +129,7 @@ const ELEMENTS = [
 ];
 
 function Iphone15ProDemo({ member }) {
-  if (!member) {
-    console.log("❌ No member selected");
-    return null;
-  }
-
-  console.log("✅ Selected member:", member)
+  if (!member) return null;
 
   return (
     <div className="relative">
@@ -194,35 +189,26 @@ function Iphone15ProDemo({ member }) {
 }
 
 export function SectionWithFlickerBehindTree() {
-
   const initialSelectedId = "20"; // anurag.pfp
 
   function findMemberById(node, id) {
     if (node.id === id) return node;
-
     if (node.children) {
       for (const child of node.children) {
         const result = findMemberById(child, id);
         if (result) return result;
       }
     }
-
     return null;
   }
 
-  const [selectedMember, setSelectedMember] = useState(() => findMemberById(members, initialSelectedId));
-
-  
+  const [selectedMember, setSelectedMember] = useState(() =>
+    findMemberById(members, initialSelectedId)
+  );
 
   function handleSelect(payload) {
-    console.log("Tree onSelect payload:", payload);
-
-    // If payload is just the id (string)
     const id = typeof payload === "string" ? payload : payload?.id;
-
     const member = findMemberById(members, id);
-    console.log("Matched member:", member);
-
     if (member && member.image) {
       setSelectedMember(member);
     } else {
@@ -231,25 +217,31 @@ export function SectionWithFlickerBehindTree() {
   }
 
   return (
-    <section className="relative flex w-full py-10 px-10 gap-10">
+    <section className="relative flex flex-col lg:flex-row w-full py-10 px-6 md:px-10 gap-10">
       {/* Left Column */}
-      <div className="flex flex-col w-2/5 justify-center items-end">
-        <h1 className="text-6xl font-bold mb-4 font-orbitron text-right text-[#B48CDE]">
-            Meet Our Core
+      <motion.div
+        className="flex flex-col w-full lg:w-2/5 justify-center items-center lg:items-end text-center lg:text-right"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 font-orbitron text-[#B48CDE]">
+          Meet Our Core
         </h1>
-        <p className="text-xl text-gray-300 text-right mb-4">
-            Discover the principles that drive our innovation and team.
+        <p className="text-base md:text-xl text-gray-300 mb-4 max-w-md">
+          Discover the principles that drive our innovation and team.
         </p>
         <NavLink to="/LegacyTeams">
-            <button className="flex items-center gap-2 border-2 border-[#B48CDE] text-[#B48CDE] font-semibold px-4 py-2 rounded-lg transition-all duration-300 hover:gap-4">
+          <button className="flex items-center gap-2 border-2 border-[#B48CDE] text-[#B48CDE] font-semibold px-4 py-2 rounded-lg transition-all duration-300 hover:gap-4">
             Navigation for Millennials
             <ChevronRight className="transition-transform duration-300 group-hover:translate-x-2" />
-            </button>
+          </button>
         </NavLink>
-        </div>
+      </motion.div>
 
       {/* Right Column */}
-      <div className="relative w-3/5 flex flex-col items-center justify-center">
+      <div className="relative w-full lg:w-3/5 flex flex-col items-center justify-center gap-8 overflow-hidden">
         {/* Flickering Grid behind */}
         <FlickeringGrid
           className="absolute inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
@@ -262,28 +254,28 @@ export function SectionWithFlickerBehindTree() {
           width={600}
         />
 
-        {/* Iphone floating on top-right */}
-        <div className="absolute -top-10 right-0 z-20 w-[220px]">
-          <Iphone15ProDemo member={selectedMember} />
-        </div>
-
-        {/* File Tree on top */}
-        <div className="relative z-10 w-full h-[400px] rounded-lg border border-gray-700 p-4 overflow-visible">
+        {/* File Tree */}
+        <motion.div
+          className="relative z-10 w-full h-[400px] rounded-lg border border-gray-700 p-4"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
           <Tree
             className="h-full w-full overflow-auto rounded-md bg-transparent p-2"
             initialSelectedId="20"
             initialExpandedItems={[]}
             elements={ELEMENTS}
-            onSelect={handleSelect} // hook into selection
+            onSelect={handleSelect}
           >
-            {/* JSX structure reflecting the same hierarchy */}
+            {/* JSX structure reflecting hierarchy */}
             <Folder element="arvr_club" value="1">
               <Folder element="faculty_advisors" value="2">
                 <File value="3"><p>dr_srivani_p.pfp</p></File>
                 <File value="4"><p>dr_bharathi_r.pfp</p></File>
                 <File value="5"><p>dr_durga_bhavani.pfp</p></File>
               </Folder>
-
               <Folder element="core_team" value="6">
                 <Folder element="leadership" value="7">
                   <File value="8"><p>arindam.pfp (Advisor)</p></File>
@@ -293,33 +285,28 @@ export function SectionWithFlickerBehindTree() {
                   <File value="12"><p>neha_h.pfp (Vice Chair)</p></File>
                   <File value="13"><p>abhinav_singh.pfp (Co Chair)</p></File>
                 </Folder>
-
                 <Folder element="administration" value="14">
                   <File value="15"><p>aditi_d.pfp (Chief Secretary)</p></File>
                   <File value="16"><p>adwit.pfp (Secretary)</p></File>
                   <File value="17"><p>mujawar_zaid.pfp (Treasurer)</p></File>
                 </Folder>
-
                 <Folder element="sub_divisions" value="18">
                   <Folder element="web_development" value="19">
                     <File value="20"><p>anurag.pfp (Head)</p></File>
                     <File value="21"><p>marmik_jain.pfp (Associate)</p></File>
                     <File value="22"><p>ansu_kumar.pfp (Associate)</p></File>
                   </Folder>
-
                   <Folder element="technical_team" value="23">
                     <File value="24"><p>priyanka_h_navale.pfp (Head)</p></File>
                     <File value="25"><p>mehul_paul.pfp (Co-Head)</p></File>
                     <File value="26"><p>samarth_pasalkar.pfp (Associate)</p></File>
                     <File value="27"><p>ananya_gupta.pfp (Associate)</p></File>
                   </Folder>
-
                   <Folder element="event_organizing" value="28">
                     <File value="29"><p>m_chaitanya_pannegar.pfp (Head)</p></File>
                     <File value="30"><p>bhoomika_r.pfp (Event Coordinator)</p></File>
                     <File value="31"><p>rakshan.pfp (Event Coordinator)</p></File>
                   </Folder>
-
                   <Folder element="marketing_team" value="32">
                     <File value="33"><p>asish.pfp (Head)</p></File>
                     <File value="34"><p>i_g_chirag.pfp (Associate)</p></File>
@@ -327,14 +314,12 @@ export function SectionWithFlickerBehindTree() {
                     <File value="36"><p>kushal_raj_g_s.pfp (Associate)</p></File>
                     <File value="37"><p>shree_gowri.pfp (Associate)</p></File>
                   </Folder>
-
                   <Folder element="social_media" value="38">
                     <File value="39"><p>nisha.pfp (Head)</p></File>
                     <File value="40"><p>pranathi_shetty.pfp (Associate)</p></File>
                     <File value="41"><p>nisha_nandisha.pfp (Associate)</p></File>
                     <File value="42"><p>abdullah.pfp (Associate-Blog writer)</p></File>
                   </Folder>
-
                   <Folder element="public_relations" value="43">
                     <File value="44"><p>charuvi_suresh.pfp (Associate)</p></File>
                     <File value="45"><p>devesh_kumar_singh.pfp (Associate)</p></File>
@@ -343,7 +328,18 @@ export function SectionWithFlickerBehindTree() {
               </Folder>
             </Folder>
           </Tree>
-        </div>
+        </motion.div>
+
+        {/* Iphone */}
+        <motion.div
+          className="relative z-20 w-[220px] mx-auto lg:absolute lg:-top-10 lg:right-0"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          <Iphone15ProDemo member={selectedMember} />
+        </motion.div>
       </div>
     </section>
   );

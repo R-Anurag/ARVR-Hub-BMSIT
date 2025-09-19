@@ -65,7 +65,7 @@ export default function LegacyTeams() {
       <div className="flex max-w-7xl mx-auto py-8 px-6 gap-4 relative z-10">
 
         {/* Vertical Heading */}
-        <div className="sticky top-28 self-start flex items-center justify-center">
+        <div className="sticky top-28 self-start hidden md:flex items-center justify-center">
           <div className="grid h-full justify-center content-center grid-cols-[max-content_max-content]">
             <h2 className="text-[80px] m-0 leading-[0.9] text-center writing-mode rotate font-['IM_Fell_Double_Pica'] text-[#B48CDE]">
               Core

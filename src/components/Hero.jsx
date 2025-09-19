@@ -50,7 +50,6 @@ const Hero = () => {
       <div className="absolute h-[375px] w-[750px] sm:w-[768px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_89%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-150px)]"></div>
 
       <div className="container relative z-10">
-        {/* Images are now directly under container, so they don't move with text */}
         <motion.img
           src={cursorImage}
           alt="Cursor"

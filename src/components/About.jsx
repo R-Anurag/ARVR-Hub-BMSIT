@@ -41,13 +41,6 @@ const About = () => {
 
       <MagicCard className="bg-[#4F21A1]/30 px-6 py-10 md:px-12 md:py-15 mt-20 rounded-3xl max-w-4xl mx-auto text-center">
       
-      {/* Bottom Text */}
-      {/* <motion.div */}
-        {/* initial={{ opacity: 0, y: 20 }} */}
-        {/* animate={isInView ? { opacity: 1, y: 0 } : {}} */}
-        {/* transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }} */}
-        {/* className="mt-16 text-center max-w-3xl mx-auto" */}
-      {/* > */}
         <h2 className="text-3xl md:text-4xl font-orbitron text-[#EEEEEE]">
           We&apos;ve come a long way!
         </h2>
@@ -61,7 +54,6 @@ const About = () => {
         <ArcTimeHistory />
       </div>
       </MagicCard>
-
     </section>
   );
 };
