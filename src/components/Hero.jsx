@@ -75,14 +75,14 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             style={{ y: yText }}
-            className="text-7xl md:text-7xl font-orbitron font-bold text-center tracking-tighter mt-0 relative z-50"
+            className="text-5xl md:text-7xl font-orbitron font-bold text-center tracking-tighter mt-0 relative z-50"
           >
             <span>AR/VR Hub</span>
             <br />
-            <span className="text-4xl md:text-5xl"> is </span>
+            <span className="text-3xl md:text-5xl"> is </span>
             <br />
             <span className="text-[#B48CDE]">
-              <FlipWords words={rotatingWords} className="text-8xl font-black" />
+              <FlipWords words={rotatingWords} className="md:text-8xl font-black" />
             </span>
           </motion.h1>
         </div>
