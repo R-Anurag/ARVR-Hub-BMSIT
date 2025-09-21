@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Linkedin, Instagram, Github, Mail, ChevronRight } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import { File, Folder, Tree } from "@/components/ui/file-tree";
@@ -7,6 +7,7 @@ import { Iphone15Pro } from "@/components/ui/iphone-15-pro";
 import { NavLink } from "react-router-dom";
 import members from "@/data/members.json";
 import { motion } from "framer-motion";
+
 
 const ELEMENTS = [
   {
@@ -206,15 +207,26 @@ export function SectionWithFlickerBehindTree() {
     findMemberById(members, initialSelectedId)
   );
 
+  const iphoneRef = useRef(null);
+
   function handleSelect(payload) {
     const id = typeof payload === "string" ? payload : payload?.id;
     const member = findMemberById(members, id);
     if (member && member.image) {
       setSelectedMember(member);
+
+      // Scroll iPhone into view
+      if (iphoneRef.current) {
+        iphoneRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "center", // aligns to center
+        });
+      }
     } else {
       setSelectedMember(null);
     }
   }
+
 
   return (
     <section className="relative flex flex-col lg:flex-row w-full py-10 px-6 md:px-10 gap-10">
@@ -332,6 +344,7 @@ export function SectionWithFlickerBehindTree() {
 
         {/* Iphone */}
         <motion.div
+          ref={iphoneRef}
           className="relative z-20 w-[220px] mx-auto lg:absolute lg:-top-10 lg:right-0"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
