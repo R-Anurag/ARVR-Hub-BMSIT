@@ -18,7 +18,7 @@ export default function FooterARVR() {
 
   return (
     <div
-      className="relative h-[200vh] w-full bg-black text-white flex flex-col justify-end"
+      className="relative h-[100vh] w-full bg-black text-white flex flex-col justify-end"
       ref={ref}
     >
       {/* Gemini Background + Title/Byline */}
