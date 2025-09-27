@@ -92,9 +92,6 @@ const EventsPage = () => {
   return (
     <div>
       <div className="min-h-screen bg-black text-white overflow-x-hidden">
-        {/* Hero Image with Overlay */}
-        {/* Hero Image with Tint */}
-
         <div
           className="relative flex flex-col justify-center items-center min-h-[25rem] mt-20 px-4 bg-cover bg-center border-b overflow-hidden"
           style={{ backgroundImage: "url('public/events/core.png')" }}
