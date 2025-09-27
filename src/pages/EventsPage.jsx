@@ -31,7 +31,7 @@ const EventsPage = () => {
       description:
         "Organized 1 Day orientation session with 1M1B in collaboration with Flaunch on upcoming LLM hackathon with Meta. Over 500 students participated.",
       color: "from-purple-700 to-blue-600",
-      image: "public/events/green.png",
+      image: "/events/green.png",
     },
     {
       id: 3,
