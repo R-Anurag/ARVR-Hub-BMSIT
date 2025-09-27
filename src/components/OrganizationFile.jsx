@@ -357,7 +357,7 @@ export function SectionWithFlickerBehindTree() {
 
         {/* File Tree */}
         <motion.div
-          className="relative z-10 w-full h-[400] rounded-lg border border-gray-700 p-4"
+          className="relative z-10 w-full h-full rounded-lg border border-gray-700 p-4"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -365,7 +365,7 @@ export function SectionWithFlickerBehindTree() {
         >
           <Tree
             className="h-full w-full overflow-auto rounded-md bg-transparent p-2"
-            initialSelectedId="8" //expanding
+            initialSelectedId="20"
             initialExpandedItems={[]}
             elements={ELEMENTS}
             onSelect={handleSelect}
