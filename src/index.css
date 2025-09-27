@@ -12,6 +12,9 @@ html {
   }
 
   :root {
+    --xr-primary: #9333ea; /* purple-600 */
+    --xr-background: #0a0a0a; /* almost black */
+
     /* ✅ Default = Dark theme */
     --background: 240 10% 3.9%;
     /* dark gray / near black */
@@ -89,7 +92,6 @@ html {
 }
 
 @keyframes pulse-float {
-
   0%,
   100% {
     transform: translate(0, 0) scale(1);
@@ -115,14 +117,15 @@ html {
   left: -1rem;
   width: 0.25rem;
   height: 100%;
-  background: var(--menu-link-active-color, #B48CDE);
+  background: var(--menu-link-active-color, #b48cde);
   transition: 0.6s;
 }
 
 .menu-hover-fill a {
   --menu-link-color: #7f8c8d;
   position: relative;
-  background: linear-gradient(var(--menu-link-active-color, #B48CDE) 0 100%) left / 0 no-repeat;
+  background: linear-gradient(var(--menu-link-active-color, #b48cde) 0 100%)
+    left / 0 no-repeat;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -198,35 +201,35 @@ html {
 
 @theme inline {
   @keyframes rainbow {
-  0% {
-    background-position: 0%;
+    0% {
+      background-position: 0%;
     }
-  100% {
-    background-position: 200%;
+    100% {
+      background-position: 200%;
     }
   }
   @keyframes shine {
-  0% {
-    background-position: 0% 0%;
+    0% {
+      background-position: 0% 0%;
     }
-  50% {
-    background-position: 100% 100%;
+    50% {
+      background-position: 100% 100%;
     }
-  to {
-    background-position: 0% 0%;
+    to {
+      background-position: 0% 0%;
     }
   }
   @keyframes meteor {
-  0% {
-    transform: rotate(var(--angle)) translateX(0);
-    opacity: 1;
+    0% {
+      transform: rotate(var(--angle)) translateX(0);
+      opacity: 1;
     }
-  70% {
-    opacity: 1;
+    70% {
+      opacity: 1;
     }
-  100% {
-    transform: rotate(var(--angle)) translateX(-500px);
-    opacity: 0;
+    100% {
+      transform: rotate(var(--angle)) translateX(-500px);
+      opacity: 0;
     }
   }
 }
