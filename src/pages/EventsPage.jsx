@@ -20,7 +20,7 @@ const EventsPage = () => {
       description:
         "Formation of AR VR HUB on 1st January 2024 at BMS Institute of Technology & Management.",
       color: "from-purple-600 to-pink-600",
-      image: "public/events/inaug.png",
+      image: "events/inaug.png",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const EventsPage = () => {
       description:
         "Signed MoU with 1M1B & Flaunch Innovation Pvt Ltd to provide training, internships, and networking opportunities.",
       color: "from-pink-600 to-purple-600",
-      image: "public/events/green.png",
+      image: "/events/green.png",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const EventsPage = () => {
       description:
         "Launched the 1M1B Green Skills Academy Internship Program for sustainability and climate-conscious careers. (29-11-2024)",
       color: "from-yellow-500 to-orange-500",
-      image: "public/events/green.png",
+      image: "/events/green.png",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const EventsPage = () => {
       description:
         "Hosted mARtian AESSence event with Unity workshops and Mars colonization theme. ",
       color: "from-yellow-500 to-orange-500",
-      image: "public/events/green.png",
+      image: "/events/green.png",
     },
     {
       id: 6,
@@ -75,7 +75,7 @@ const EventsPage = () => {
       description:
         "Presented a Technical Stall at Anveshana 2025, winning the 'Best User Experience Award' with cash prize. ",
       color: "from-yellow-500 to-orange-500",
-      image: "public/events/green.png",
+      image: "/events/green.png",
     },
     // {
     //   id: 7,
@@ -94,7 +94,7 @@ const EventsPage = () => {
       <div className="min-h-screen bg-black text-white overflow-x-hidden">
         <div
           className="relative flex flex-col justify-center items-center min-h-[25rem] mt-20 px-4 bg-cover bg-center border-b overflow-hidden"
-          style={{ backgroundImage: "url('public/events/core.png')" }}
+          style={{ backgroundImage: "url('/events/core.png')" }}
         >
           {/* Tint Overlay */}
           <div className="absolute inset-0 bg-purple-600/60 mix-blend-multiply"></div>
