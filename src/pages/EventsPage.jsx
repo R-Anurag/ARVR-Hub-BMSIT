@@ -93,7 +93,7 @@ const EventsPage = () => {
     <div>
       <div className="min-h-screen bg-black text-white overflow-x-hidden">
         <div
-          className="relative flex flex-col justify-center items-center min-h-[25rem] mt-20 px-4 bg-cover bg-center border-b overflow-hidden"
+          className="relative flex flex-col justify-center items-center min-h-[25rem] mt-0 bg-cover bg-center border-b overflow-hidden"
           style={{ backgroundImage: "url('/events/core.png')" }}
         >
           {/* Tint Overlay */}
