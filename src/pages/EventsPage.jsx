@@ -20,7 +20,7 @@ const EventsPage = () => {
       description:
         "Formation of AR VR HUB on 1st January 2024 at BMS Institute of Technology & Management.",
       color: "from-purple-600 to-pink-600",
-      image: "src/assets/images/inaug.png",
+      image: "public/events/inaug.png",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const EventsPage = () => {
       description:
         "Organized 1 Day orientation session with 1M1B in collaboration with Flaunch on upcoming LLM hackathon with Meta. Over 500 students participated.",
       color: "from-purple-700 to-blue-600",
-      image: "src/assets/images/green.png",
+      image: "public/events/green.png",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const EventsPage = () => {
       description:
         "Signed MoU with 1M1B & Flaunch Innovation Pvt Ltd to provide training, internships, and networking opportunities.",
       color: "from-pink-600 to-purple-600",
-      image: "src/assets/images/inaug.png",
+      image: "public/events/green.png",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const EventsPage = () => {
       description:
         "Launched the 1M1B Green Skills Academy Internship Program for sustainability and climate-conscious careers. (29-11-2024)",
       color: "from-yellow-500 to-orange-500",
-      image: "src/assets/images/inaug.png",
+      image: "public/events/green.png",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const EventsPage = () => {
       description:
         "Hosted mARtian AESSence event with Unity workshops and Mars colonization theme. ",
       color: "from-yellow-500 to-orange-500",
-      image: "src/assets/images/inaug.png",
+      image: "public/events/green.png",
     },
     {
       id: 6,
@@ -75,7 +75,7 @@ const EventsPage = () => {
       description:
         "Presented a Technical Stall at Anveshana 2025, winning the 'Best User Experience Award' with cash prize. ",
       color: "from-yellow-500 to-orange-500",
-      image: "src/assets/images/inaug.png",
+      image: "public/events/green.png",
     },
     // {
     //   id: 7,
