@@ -14,7 +14,8 @@ html {
   :root {
     --xr-primary: #9333ea; /* purple-600 */
     --xr-background: #0a0a0a; /* almost black */
-
+    --line-color: rgba(168, 85, 247, 0.08); /* very faint purple */
+    --background-color: rgba(17, 17, 17, 0.95);
     /* ✅ Default = Dark theme */
     --background: 240 10% 3.9%;
     /* dark gray / near black */

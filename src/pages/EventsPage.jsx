@@ -167,9 +167,20 @@ const EventsPage = () => {
                     ></div>
 
                     {/* Animated Border Glow */}
-                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500/0 via-purple-400/30 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                    {/* <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500/0 via-purple-400/30 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div> */}
 
-                    <div className="relative p-8 bg-gray-900/80 backdrop-blur-sm h-full">
+                    <div
+                      className="relative p-8  backdrop-blur-sm h-full"
+                      style={{
+                        backgroundImage: `
+      linear-gradient(to right, var(--line-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--line-color) 1px, transparent 1px),
+      linear-gradient(var(--background-color), var(--background-color))
+    `,
+                        backgroundSize: "20px 20px", // spacing of grid
+                        backgroundColor: "var(--background-color)", // fallback solid color
+                      }}
+                    >
                       {/* Event Header */}
                       <div className="mb-6">
                         {/* Image Placeholder */}
@@ -181,7 +192,6 @@ const EventsPage = () => {
                             className="w-full h-[500px] object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
-
                         <div className="text-center mb-4">
                           <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-purple-200 transition-colors duration-300">
                             {event.title}
