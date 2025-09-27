@@ -147,7 +147,7 @@ const EventsPage = () => {
                 {events.map((event, index) => (
                   <div
                     key={event.id}
-                    className={`group relative overflow-hidden rounded-3xl border-4 border-purple-500/30 hover:border-purple-400/60 transition-all duration-500 ${
+                    className={`group relative overflow-hidden rounded-3xl border-4 border-purple-400/60 hover:border-purple-400/60 transition-all duration-500 ${
                       isLoaded
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-20"
