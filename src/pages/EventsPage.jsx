@@ -147,7 +147,7 @@ const EventsPage = () => {
                 {events.map((event, index) => (
                   <div
                     key={event.id}
-                    className={`group relative overflow-hidden rounded-3xl border-4 border-purple-400/60 hover:border-purple-400/60 transition-all duration-500 ${
+                    className={`group relative overflow-hidden border-4 border-purple-400/60 hover:border-purple-400/60 transition-all duration-500 ${
                       isLoaded
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-20"
@@ -170,7 +170,7 @@ const EventsPage = () => {
                     {/* <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500/0 via-purple-400/30 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div> */}
 
                     <div
-                      className="relative p-8  backdrop-blur-sm h-full"
+                      className="relative  backdrop-blur-sm h-full"
                       style={{
                         backgroundImage: `
       linear-gradient(to right, var(--line-color) 1px, transparent 1px),
@@ -189,7 +189,7 @@ const EventsPage = () => {
                           <img
                             src={event.image}
                             alt={event.title}
-                            className="w-full h-[500px] object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
                         <div className="text-center mb-4">
