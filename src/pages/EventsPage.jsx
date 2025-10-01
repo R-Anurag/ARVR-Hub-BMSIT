@@ -106,7 +106,7 @@ const EventsPage = () => {
         <div
           style={{
             backgroundImage: `
-      radial-gradient(circle, color-mix(in srgb, var(--xr-primary) 25%, black) 2px, #0000 2px),
+      radial-gradient(circle, color-mix(in srgb, var(--xr-primary) 35%, black) 2px, #0000 2px),
       linear-gradient(var(--xr-background), var(--xr-background))
     `,
             backgroundSize: "40px 40px", // optional: spacing for dots
