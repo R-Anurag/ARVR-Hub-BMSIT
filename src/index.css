@@ -10,6 +10,9 @@ html {
   body {
     @apply relative font-sans h-screen overflow-x-hidden;
   }
+  html{
+    @apply w-full overflow-x-hidden;
+  }
 
   :root {
     --xr-primary: #9333ea; /* purple-600 */
