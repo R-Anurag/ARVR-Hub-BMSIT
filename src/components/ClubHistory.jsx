@@ -35,7 +35,7 @@ export function ArcTimeHistory() {
   return (
     <ArcTimeline
       data={timelineWithIcons}
-      defaultActiveStep={{ time: "2024 Q4", stepIndex: 3 }}
+      defaultActiveStep={{ time: "2024 Q4", stepIndex: 1 }}
       arcConfig={{
         circleWidth: 4500,
         angleBetweenMinorSteps: 0.4,
