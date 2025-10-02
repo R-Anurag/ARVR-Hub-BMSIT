@@ -12,14 +12,15 @@ export default function Home() {
       <CharacterSequence />
       <MarqueeText />
       <About />
+      <Benefits />
+      {/* Benefits + Footer with shared gradient */}
+      <section className="relative z-0">
+  <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(125,60,255,0.55)_0%,_rgba(0,0,0,1)_80%)]"></div>
+  
+  <FooterARVR />
+</section>
 
-      {/*Gradient starts from Benefits + Footer */}
-      <div className="relative">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(125,60,255,0.55)_0%,_rgba(0,0,0,1)_100%)]"></div>
-        
-        <Benefits />
-        <FooterARVR />
-      </div>
+
     </main>
   )
 }
