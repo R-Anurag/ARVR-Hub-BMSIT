@@ -7,22 +7,18 @@ import FooterARVR from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-black text-white relative overflow-hidden">
+    <main className="relative bg-black text-white">
       <Hero />
       <CharacterSequence />
       <MarqueeText />
       <About />
 
-      {/* Shared wrapper for Benefits + Footer */}
+      {/*Gradient starts from Benefits + Footer */}
       <div className="relative">
-        {/* Continuous Gradient Background */}
-        <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(123,45,255,0.4)_0%,_transparent_70%)]" />
-
-        {/* Content sits above gradient */}
-        <div className="relative z-10">
-          <Benefits />
-          <FooterARVR />
-        </div>
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(125,60,255,0.55)_0%,_rgba(0,0,0,1)_100%)]"></div>
+        
+        <Benefits />
+        <FooterARVR />
       </div>
     </main>
   )

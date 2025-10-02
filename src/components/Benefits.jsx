@@ -1,4 +1,3 @@
-// Benefits.jsx
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -14,10 +13,7 @@ export default function Benefits() {
       className="relative text-white px-6 py-20 md:px-12 md:py-28 overflow-hidden"
       id="benefits"
     >
-      {/* Gradient Glow at the bottom */}
-      <div className="absolute bottom-0 inset-x-0 flex justify-center z-0">
-        <div className="w-[1000px] h-[500px] bg-[radial-gradient(circle_at_center,_rgba(125,60,255,0.55)_0%,_rgba(0,0,0,0)_70%)]"></div>
-      </div>
+      {/* ✅ Removed gradient background here */}
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl md:mx-[10%] flex flex-col md:flex-row gap-2 md:gap-2">

@@ -4,11 +4,8 @@ import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full text-white bg-black overflow-hidden">
-      {/* Gradient Glow Rising Up */}
-      <div className="absolute -top-40 inset-x-0 flex justify-center z-0">
-        <div className="w-[1200px] h-[600px] bg-[radial-gradient(circle_at_center,_rgba(125,60,255,0.6)_0%,_rgba(0,0,0,0)_70%)]"></div>
-      </div>
+    <footer className="relative w-full text-white bg-transparent overflow-hidden">
+      
 
       {/* Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 md:px-12 md:py-16">
