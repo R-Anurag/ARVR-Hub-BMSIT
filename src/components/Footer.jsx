@@ -1,11 +1,17 @@
 "use client";
 import React from "react";
-import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa"; // <-- social icons
+import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-gradient-to-t from-black via-[#2b0040] to-[#7d3cff] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between">
+    <footer className="relative w-full text-white bg-black overflow-hidden">
+      {/* Radial Spherical Gradient Background */}
+      <div className="absolute inset-0">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-[radial-gradient(ellipse_at_center,_rgba(125,60,255,0.6)_0%,_rgba(0,0,0,0)_70%)]"></div>
+      </div>
+
+      {/* Footer Content */}
+      <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between">
         {/* Left Side - Logo + Social */}
         <div className="flex flex-col space-y-6">
           <div className="flex items-center space-x-2">
@@ -16,21 +22,27 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex space-x-5 text-2xl">
             <a
-              href="#"
+              href="https://wa.me/1234567890" // replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-green-400 transition"
               aria-label="WhatsApp"
             >
               <FaWhatsapp />
             </a>
             <a
-              href="#"
+              href="https://instagram.com/YOUR_INSTAGRAM" // replace with your Instagram profile
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-pink-400 transition"
               aria-label="Instagram"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/YOUR_LINKEDIN" // replace with your LinkedIn profile
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-blue-400 transition"
               aria-label="LinkedIn"
             >
@@ -69,26 +81,18 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:text-purple-300 transition">
-                  About
+                  Home
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-purple-300 transition">
-                  Case Studies
+                  Team
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-purple-300 transition">
-                  Resources
+                  Events
                 </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-purple-300 transition">
-                  Careers
-                </a>
-              </li>
-              <li className="mt-4 text-gray-400">
-                45 W 27th St, FL 8, New York, NY 10001
               </li>
             </ul>
           </div>
