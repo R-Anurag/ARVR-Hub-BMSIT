@@ -11,10 +11,16 @@ export default function Benefits() {
   return (
     <section
       ref={ref}
-      className="text-white px-6 py-20 md:px-12 md:py-28"
+      className="relative text-white px-6 py-20 md:px-12 md:py-28 overflow-hidden"
       id="benefits"
     >
-      <div className="max-w-7xl md:mx-[10%] flex flex-col md:flex-row gap-2 md:gap-2 relative overflow-hidden">
+      {/* Gradient Glow at the bottom */}
+      <div className="absolute bottom-0 inset-x-0 flex justify-center z-0">
+        <div className="w-[1000px] h-[500px] bg-[radial-gradient(circle_at_center,_rgba(125,60,255,0.55)_0%,_rgba(0,0,0,0)_70%)]"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl md:mx-[10%] flex flex-col md:flex-row gap-2 md:gap-2">
         {/* Left Column → Terminal */}
         <motion.div
           className="w-full md:w-[65%] items-right"
@@ -23,48 +29,39 @@ export default function Benefits() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           <Terminal className="h-[520px] md:h-[620px] text-base md:text-lg">
-            {/* Command */}
             <TypingAnimation className="text-blue-400 font-mono">
-                &gt; club.list-benefits()
+              &gt; club.list-benefits()
             </TypingAnimation>
-
-            {/* System messages */}
             <AnimatedSpan className="text-gray-400 font-mono">
-                Connecting to AR/VR Club database...
+              Connecting to AR/VR Club database...
             </AnimatedSpan>
             <AnimatedSpan className="text-green-500 font-mono">
-                Authentication successful.
+              Authentication successful.
             </AnimatedSpan>
             <AnimatedSpan className="text-gray-400 font-mono">
-                Fetching benefits. Please stand by...
-            </AnimatedSpan>
-
-            {/* Benefits list */}
-            <AnimatedSpan className="text-purple-400 font-mono">
-                ✔ Hands-On Workshops & Hackathons
+              Fetching benefits. Please stand by...
             </AnimatedSpan>
             <AnimatedSpan className="text-purple-400 font-mono">
-                ✔ Mentor-Supervised Capstone Projects
+              ✔ Hands-On Workshops & Hackathons
             </AnimatedSpan>
             <AnimatedSpan className="text-purple-400 font-mono">
-                ✔ Real-Time Project Exploration
+              ✔ Mentor-Supervised Capstone Projects
             </AnimatedSpan>
             <AnimatedSpan className="text-purple-400 font-mono">
-                ✔ Internship Opportunities
+              ✔ Real-Time Project Exploration
             </AnimatedSpan>
             <AnimatedSpan className="text-purple-400 font-mono">
-                ✔ Intercollege Competitions
+              ✔ Internship Opportunities
             </AnimatedSpan>
-
-            {/* Blue info message */}
+            <AnimatedSpan className="text-purple-400 font-mono">
+              ✔ Intercollege Competitions
+            </AnimatedSpan>
             <AnimatedSpan className="text-blue-500 font-mono">
               <span>ℹ Updated 1 file:</span>
               <span className="pl-2">- AR-VRHub/membership.db</span>
             </AnimatedSpan>
-
-            {/* Final message */}
             <TypingAnimation className="text-white font-mono">
-                Access complete. Join us to start building the future.
+              Access complete. Join us to start building the future.
             </TypingAnimation>
           </Terminal>
         </motion.div>
@@ -80,9 +77,9 @@ export default function Benefits() {
             Wondering <br /> About <br /> Membership perks?
           </h3>
           <p className="text-gray-400 leading-relaxed">
-            Whether you’re just starting out or already
-            experienced, the AR/VR Club gives you the tools and community to
-            experiment, grow, and shape the future of immersive technology!
+            Whether you’re just starting out or already experienced, the AR/VR
+            Club gives you the tools and community to experiment, grow, and
+            shape the future of immersive technology!
           </p>
         </motion.div>
       </div>
