@@ -11,7 +11,7 @@ export default function Benefits() {
   return (
     <section
       ref={ref}
-      className="bg-[#4F21A1]/5 text-white px-6 py-20 md:px-12 md:py-28"
+      className="text-white px-6 py-20 md:px-12 md:py-28"
       id="benefits"
     >
       <div className="max-w-7xl md:mx-[10%] flex flex-col md:flex-row gap-2 md:gap-2 relative overflow-hidden">

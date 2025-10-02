@@ -53,27 +53,7 @@ export default function Footer() {
 
         {/* Right Side - Links */}
         <div className="grid grid-cols-2 gap-12 mt-12 md:mt-0 text-sm">
-          {/* Column 1 */}
-          <div>
-            <h3 className="uppercase font-semibold mb-4">How We Help</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-purple-300 transition">
-                  Prior Authorization
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-purple-300 transition">
-                  Insurance Monitoring
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-purple-300 transition">
-                  Benefit Checks
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           {/* Column 2 */}
           <div>
