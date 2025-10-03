@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import FooterARVR from "@/components/Footer";
-import CalendarDemo from "@/components/Calendar2.jsx";
+import CalendarDemo from "@/components/Calendar.jsx";
 //calendar
 const EventsPage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
