@@ -46,7 +46,6 @@ export function CalendarDemo() {
           mode="single"
           selected={selectedDate}
           onSelect={setSelectedDate}
-          className="rounded-md border shadow-sm"
           captionLayout="dropdown"
           modifiers={{
             hasEvent: (date) => eventDatesSet.has(date.toDateString()),
@@ -59,7 +58,7 @@ export function CalendarDemo() {
               <div className="flex flex-col items-center justify-center w-full h-full">
                 <span>{date.getDate()}</span>
                 {modifiers.hasEvent && (
-                  <span className="mt-1 w-1.5 h-1.5 rounded-full bg-indigo-400 block"></span>
+                  <span className="mt-1 w-1px h-1.5 rounded-full bg-indigo-400 block"></span>
                 )}
               </div>
             ),
