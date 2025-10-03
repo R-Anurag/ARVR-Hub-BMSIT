@@ -8,11 +8,10 @@ export default function Footer() {
       {/* Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 md:px-12 md:py-16">
         <div className="flex flex-col items-center text-center gap-8">
-          
           {/* ✅ Centered Logo + Text */}
           <div className="flex items-center space-x-3">
             <img
-              src="/ARVR-Hub-BMSIT/ARVRHubLogo.png"
+              src="public\ARVRHubLogo.png"
               alt="AR/VR Hub Logo"
               className="w-14 h-14 object-contain"
             />
@@ -51,7 +50,9 @@ export default function Footer() {
           <div className="w-full flex justify-between items-center text-sm text-gray-400 mt-8">
             {/* Left Side */}
             <div className="text-left">
-              <span>Let us take you into the world of Augmented and Virtual Reality!</span>
+              <span>
+                Let us take you into the world of Augmented and Virtual Reality!
+              </span>
             </div>
 
             {/* Right Side */}
