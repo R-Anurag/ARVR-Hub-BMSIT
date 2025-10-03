@@ -11,7 +11,7 @@ export default function Footer() {
           {/* ✅ Centered Logo + Text */}
           <div className="flex items-center space-x-3">
             <img
-              src="public\ARVRHubLogo.png"
+              src="/ARVRHubLogo.png"
               alt="AR/VR Hub Logo"
               className="w-14 h-14 object-contain"
             />
