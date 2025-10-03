@@ -99,9 +99,10 @@ const EventsPage = () => {
           {/* Tint Overlay */}
           <div className="absolute inset-0 bg-purple-600/60 mix-blend-multiply"></div>
           {/* Heading */}
-          <h1 className="relative text-white text-6xl font-medium uppercase drop-shadow-[2px_5px_10px_rgba(0,0,0,0.9)]">
-            EVENTS
-          </h1>
+          <h1 className="relative text-white text-5xl md:text-7xl font-orbitron font-bold uppercase text-center tracking-tighter drop-shadow-[2px_5px_10px_rgba(0,0,0,0.9)]">
+  EVENTS
+</h1>
+
         </div>
         <div
           style={{
