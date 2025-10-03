@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Calendar } from "@/components/ui/Calendar";
+import { Calendar } from "@/components/ui/calendar";
 
 const events = [
   {
