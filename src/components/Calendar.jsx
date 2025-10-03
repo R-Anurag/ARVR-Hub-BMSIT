@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Calendar } from "@/components/ui/Calendar";
+import { Calendar } from "@/components/ui/Calendar.jsx";
 
 const events = [
   {
@@ -58,7 +58,7 @@ export function CalendarDemo() {
               <div className="flex flex-col items-center justify-center w-full h-full">
                 <span>{date.getDate()}</span>
                 {modifiers.hasEvent && (
-                  <span className="mt-1 w-1px h-1.5 rounded-full bg-indigo-400 block"></span>
+                  <span className="mt-1 w-1.5 h-1.5 rounded-full bg-indigo-400 block"></span>
                 )}
               </div>
             ),
