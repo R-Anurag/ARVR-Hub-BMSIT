@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import FooterARVR from "@/components/Footer";
+import { CalendarDemo } from "@/components/Calendar";
+
 const EventsPage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -102,7 +104,6 @@ const EventsPage = () => {
           <h1 className="relative text-white text-5xl md:text-7xl font-orbitron font-bold uppercase text-center tracking-tighter drop-shadow-[2px_5px_10px_rgba(0,0,0,0.9)]">
             EVENTS
           </h1>
-
         </div>
         <div
           style={{
@@ -141,6 +142,9 @@ const EventsPage = () => {
                 </a>{" "}
                 so that you'll never miss an event!
               </p>
+            </div>
+            <div>
+              <CalendarDemo></CalendarDemo>
             </div>
             <div className="flex justify-center p-8">
               {/* Events Grid */}
