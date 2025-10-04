@@ -40,7 +40,7 @@ export function CalendarDemo() {
   return (
     <div className="flex flex-col md:flex-row min-h-130px bg-transparent text-white p-8 gap-8">
       {/* Calendar Section */}
-      <div className="md:w-1/3 ">
+      <div className="md:w-1/3 flex flex-col items-center justify-center ">
         <h2 className="text-2xl font-semibold mb-4">ARVR Calendar</h2>
         <Calendar
           mode="single"
@@ -70,59 +70,55 @@ export function CalendarDemo() {
       <div className="md:w-2/3 flex flex-col gap-6">
         <h2 className="text-2xl font-semibold mb-4">Upcoming Events</h2>
 
-        {selectedEvents.length > 0
-          ? selectedEvents.map((event, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-800/80 p-4 rounded-xl border border-gray-700 shadow hover:shadow-lg transition-shadow duration-300"
-              >
-                <h3 className="text-xl font-bold text-indigo-400">
-                  {event.title}
-                </h3>
-                <p className="text-gray-300 mt-1">
-                  <span className="font-semibold">Date:</span> {event.date}
-                </p>
-                <p className="text-gray-300">
-                  <span className="font-semibold">Time:</span> {event.time}
-                </p>
-                <p className="text-gray-300">
-                  <span className="font-semibold">Venue:</span> {event.venue}
-                </p>
-                <p className="text-gray-400 mt-2">{event.description}</p>
-                {event.link && (
-                  <a
-                    href={event.link}
-                    className="inline-block mt-3 text-sm text-indigo-400 hover:underline"
-                  >
-                    Register
-                  </a>
-                )}
-              </div>
-            ))
-          : upcomingEvents.map((event, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-800/70 p-3 rounded-lg border border-gray-700 shadow hover:shadow-md transition-shadow duration-200 flex justify-between items-center"
-              >
-                <div>
-                  <h3 className="font-semibold text-indigo-400">
+        {selectedEvents.length > 0 || upcomingEvents.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {(selectedEvents.length > 0 ? selectedEvents : upcomingEvents).map(
+              (event, idx) => (
+                <div
+                  key={idx}
+                  className="p-5 rounded-xl border border-purple-400/40 shadow-sm hover:shadow-md transition-all duration-300"
+                  style={{
+                    backgroundImage: `
+                linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
+              `,
+                    backgroundSize: "32px 32px",
+                    backgroundColor: "#0b0b1a",
+                  }}
+                >
+                  <h3 className="text-lg font-semibold text-purple-300">
                     {event.title}
                   </h3>
-                  <p className="text-gray-300 text-sm">
-                    {event.date} | {event.time}
+                  <p className="text-gray-300 mt-1">
+                    <span className="font-semibold">Date:</span> {event.date}
                   </p>
-                  <p className="text-gray-400 text-sm">{event.venue}</p>
+                  <p className="text-gray-300">
+                    <span className="font-semibold">Time:</span> {event.time}
+                  </p>
+                  <p className="text-gray-300">
+                    <span className="font-semibold">Venue:</span> {event.venue}
+                  </p>
+                  {event.description && (
+                    <p className="text-gray-400 mt-2">{event.description}</p>
+                  )}
+                  {event.link && (
+                    <a
+                      href={event.link}
+                      className="inline-block mt-3 px-4 py-2 text-sm font-medium text-purple-300 border border-purple-400/50 rounded-lg hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300"
+                      style={{
+                        backgroundColor: "#0b0b1a",
+                      }}
+                    >
+                      Register
+                    </a>
+                  )}
                 </div>
-                {event.link && (
-                  <a
-                    href={event.link}
-                    className="text-sm text-indigo-400 hover:underline"
-                  >
-                    Register
-                  </a>
-                )}
-              </div>
-            ))}
+              )
+            )}
+          </div>
+        ) : (
+          <p className="text-gray-400 italic">No upcoming events</p>
+        )}
       </div>
     </div>
   );
