@@ -56,7 +56,7 @@ const Hero = () => {
           style={{ x: xCursor, y: yCursor }}
           animate={isIdle ? { scale: [1, 1.1, 1], y: [0, -10, 0] } : { scale: 1, y: 0 }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="w-5 h-5 sm:w-[120px] sm:h-[120px] absolute -top-[20px] left-[100px] hidden sm:inline"
+          className="w-8 h-8 sm:w-[160px] sm:h-[180px] absolute -top-[20px] left-[100px] hidden sm:inline"
         />
 
         <motion.img
