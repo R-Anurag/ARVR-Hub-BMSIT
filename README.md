@@ -3,9 +3,28 @@
 Welcome to the **Augmented & Virtual Reality Hub of BMSIT&M** 🎓  
 This is the **official web platform** of our college club, built to showcase our projects, events, and innovations in AR/VR technology.  
 
+<img width="1870" height="808" alt="image" src="https://github.com/user-attachments/assets/b5fa1b78-1b5d-4425-9030-7cb2d2989a15" />
+
+## 👥 About the Club  
+
+The **AR/VR Hub of BMSIT&M** is a student-run community that:  
+
+- Organizes **workshops and hands-on sessions**  
+- Builds **innovative projects in AR/VR**  
+- Encourages **collaboration and research** in immersive tech  
+
+## 📲 Club Contacts & Social Links  
+
+Stay connected with us:  
+
+- 📸 Instagram: [@arvrhub_bmsit](https://instagram.com/arvrhub_bmsit)  
+- 💼 LinkedIn: [AR/VR Hub – BMSIT&M](https://linkedin.com/company/arvrhub-bmsit)  
+- 💻 GitHub: [ARVR-Hub-BMSIT](https://github.com/ARVR-Hub-BMSIT)  
+- 📧 Email: arvrhub@bmsit.in  
+
 ---
 
-## 🔎 Overview  
+## 🔎 Overview of the Website 
 
 The **AR/VR Hub** is a student-driven initiative that brings together enthusiasts of immersive technologies.  
 Our website serves as:  
@@ -14,8 +33,6 @@ Our website serves as:
 - 🎥 A **showcase platform** for student projects.  
 - 📅 An **events page** to highlight workshops, hackathons, and sessions.  
 - 👥 A **community space** for collaboration and learning.  
-
----
 
 ## 🧠 Tech Stack  
 
@@ -86,27 +103,6 @@ ARVR-Hub-BMSIT/
 
 We deploy using **Vercel** for simplicity and speed.  
 Every push to `main` automatically updates the live site.  
-
----
-
-## 👥 About the Club  
-
-The **AR/VR Hub of BMSIT&M** is a student-run community that:  
-
-- Organizes **workshops and hands-on sessions**  
-- Builds **innovative projects in AR/VR**  
-- Encourages **collaboration and research** in immersive tech  
-
----
-
-## 📲 Club Contacts & Social Links  
-
-Stay connected with us:  
-
-- 📸 Instagram: [@arvrhub_bmsit](https://instagram.com/arvrhub_bmsit)  
-- 💼 LinkedIn: [AR/VR Hub – BMSIT&M](https://linkedin.com/company/arvrhub-bmsit)  
-- 💻 GitHub: [ARVR-Hub-BMSIT](https://github.com/ARVR-Hub-BMSIT)  
-- 📧 Email: arvrhub@bmsit.in  
 
 ---
 
