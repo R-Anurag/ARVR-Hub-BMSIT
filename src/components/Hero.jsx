@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import cursorImage from "../assets/images/cursor.png";
-import messageImage from "../assets/images/message.png";
+import smartGlassesImage from "../assets/images/smartGlasses.png";
+import vrHeadsetImage from "../assets/images/vrHeadset.png";
 import { FlipWords } from "./FlipWords";
 
 const rotatingWords = ["Cool", "Innovative", "Inspiring", "Immersive", "Futuristic"];
@@ -51,7 +51,7 @@ const Hero = () => {
 
       <div className="container relative z-10">
         <motion.img
-          src={cursorImage}
+          src={smartGlassesImage}
           alt="Cursor"
           style={{ x: xCursor, y: yCursor }}
           animate={isIdle ? { scale: [1, 1.1, 1], y: [0, -10, 0] } : { scale: 1, y: 0 }}
@@ -60,12 +60,12 @@ const Hero = () => {
         />
 
         <motion.img
-          src={messageImage}
+          src={vrHeadsetImage}
           alt="Message"
           style={{ x: xMessage, y: yMessage }}
           animate={isIdle ? { scale: [1, 1.1, 1], y: [0, 10, 0] } : { scale: 1, y: 0 }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="w-5 h-5 sm:w-[120px] sm:h-[120px] absolute top-[100px] right-[120px] hidden sm:inline"
+          className="w-5 h-6 sm:w-[120px] sm:h-[140px] absolute top-[100px] right-[120px] hidden sm:inline"
         />
 
         {/* Text content */}
