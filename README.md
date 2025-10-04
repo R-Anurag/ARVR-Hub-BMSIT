@@ -1,262 +1,135 @@
-# React + Vite Project
+# 🕶️ AR/VR Hub – BMSIT&M  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Augmented & Virtual Reality Hub of BMSIT&M** 🎓  
+This is the **official web platform** of our college club, built to showcase our projects, events, and innovations in AR/VR technology.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔎 Overview  
 
-## Expanding the ESLint configuration
+The **AR/VR Hub** is a student-driven initiative that brings together enthusiasts of immersive technologies.  
+Our website serves as:  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌐 A **hub for resources** related to AR/VR.  
+- 🎥 A **showcase platform** for student projects.  
+- 📅 An **events page** to highlight workshops, hackathons, and sessions.  
+- 👥 A **community space** for collaboration and learning.  
+
+---
+
+## 🧠 Tech Stack  
+
+- **Frontend**: React, Vite  
+- **Styling**: TailwindCSS  
+- **Tooling**: ESLint, PostCSS  
+- **Deployment**: Vercel  
+
+---
+
+## 🚀 Getting Started  
+
+### 1. Clone the Repository  
+
+```bash
+git clone https://github.com/<your-username>/ARVR-Hub-BMSIT.git
+cd ARVR-Hub-BMSIT
+```
+
+### 2. Install Dependencies  
+
+Make sure you have **Node.js ≥ 18** installed.  
+
+```bash
+npm install
+```
+
+### 3. Run Locally  
+
+```bash
+npm run dev
+```
+
+Visit 👉 **http://localhost:5173**  
+
+### 4. Build for Production  
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📁 Project Structure  
 
 ```
-ARVR-Hub-BMSIT
-├─ components.json
-├─ eslint.config.js
-├─ index.html
-├─ jsconfig.json
-├─ package-lock.json
-├─ package.json
-├─ postcss.config.js
-├─ public
-│  ├─ ARVRHubLogo.png
-│  ├─ characterImages
-│  │  ├─ ezgif-frame-001.png
-│  │  ├─ ezgif-frame-002.png
-│  │  ├─ ezgif-frame-003.png
-│  │  ├─ ezgif-frame-004.png
-│  │  ├─ ezgif-frame-005.png
-│  │  ├─ ezgif-frame-006.png
-│  │  ├─ ezgif-frame-007.png
-│  │  ├─ ezgif-frame-008.png
-│  │  ├─ ezgif-frame-009.png
-│  │  ├─ ezgif-frame-010.png
-│  │  ├─ ezgif-frame-011.png
-│  │  ├─ ezgif-frame-012.png
-│  │  ├─ ezgif-frame-013.png
-│  │  ├─ ezgif-frame-014.png
-│  │  ├─ ezgif-frame-015.png
-│  │  ├─ ezgif-frame-016.png
-│  │  ├─ ezgif-frame-017.png
-│  │  ├─ ezgif-frame-018.png
-│  │  ├─ ezgif-frame-019.png
-│  │  ├─ ezgif-frame-020.png
-│  │  ├─ ezgif-frame-021.png
-│  │  ├─ ezgif-frame-022.png
-│  │  ├─ ezgif-frame-023.png
-│  │  ├─ ezgif-frame-024.png
-│  │  ├─ ezgif-frame-025.png
-│  │  ├─ ezgif-frame-026.png
-│  │  ├─ ezgif-frame-027.png
-│  │  ├─ ezgif-frame-028.png
-│  │  ├─ ezgif-frame-029.png
-│  │  ├─ ezgif-frame-030.png
-│  │  ├─ ezgif-frame-031.png
-│  │  ├─ ezgif-frame-032.png
-│  │  ├─ ezgif-frame-033.png
-│  │  ├─ ezgif-frame-034.png
-│  │  ├─ ezgif-frame-035.png
-│  │  ├─ ezgif-frame-036.png
-│  │  ├─ ezgif-frame-037.png
-│  │  ├─ ezgif-frame-038.png
-│  │  ├─ ezgif-frame-039.png
-│  │  ├─ ezgif-frame-040.png
-│  │  ├─ ezgif-frame-041.png
-│  │  ├─ ezgif-frame-042.png
-│  │  ├─ ezgif-frame-043.png
-│  │  ├─ ezgif-frame-044.png
-│  │  ├─ ezgif-frame-045.png
-│  │  ├─ ezgif-frame-046.png
-│  │  ├─ ezgif-frame-047.png
-│  │  ├─ ezgif-frame-048.png
-│  │  ├─ ezgif-frame-049.png
-│  │  ├─ ezgif-frame-050.png
-│  │  ├─ ezgif-frame-051.png
-│  │  ├─ ezgif-frame-052.png
-│  │  ├─ ezgif-frame-053.png
-│  │  ├─ ezgif-frame-054.png
-│  │  ├─ ezgif-frame-055.png
-│  │  ├─ ezgif-frame-056.png
-│  │  ├─ ezgif-frame-057.png
-│  │  ├─ ezgif-frame-058.png
-│  │  ├─ ezgif-frame-059.png
-│  │  ├─ ezgif-frame-060.png
-│  │  ├─ ezgif-frame-061.png
-│  │  ├─ ezgif-frame-062.png
-│  │  ├─ ezgif-frame-063.png
-│  │  ├─ ezgif-frame-064.png
-│  │  ├─ ezgif-frame-065.png
-│  │  ├─ ezgif-frame-066.png
-│  │  ├─ ezgif-frame-067.png
-│  │  ├─ ezgif-frame-068.png
-│  │  ├─ ezgif-frame-069.png
-│  │  ├─ ezgif-frame-070.png
-│  │  ├─ ezgif-frame-071.png
-│  │  ├─ ezgif-frame-072.png
-│  │  ├─ ezgif-frame-073.png
-│  │  ├─ ezgif-frame-074.png
-│  │  ├─ ezgif-frame-075.png
-│  │  ├─ ezgif-frame-076.png
-│  │  ├─ ezgif-frame-077.png
-│  │  ├─ ezgif-frame-078.png
-│  │  ├─ ezgif-frame-079.png
-│  │  ├─ ezgif-frame-080.png
-│  │  ├─ ezgif-frame-081.png
-│  │  ├─ ezgif-frame-082.png
-│  │  ├─ ezgif-frame-083.png
-│  │  ├─ ezgif-frame-084.png
-│  │  ├─ ezgif-frame-085.png
-│  │  ├─ ezgif-frame-086.png
-│  │  ├─ ezgif-frame-087.png
-│  │  ├─ ezgif-frame-088.png
-│  │  ├─ ezgif-frame-089.png
-│  │  ├─ ezgif-frame-090.png
-│  │  ├─ ezgif-frame-091.png
-│  │  ├─ ezgif-frame-092.png
-│  │  ├─ ezgif-frame-093.png
-│  │  ├─ ezgif-frame-094.png
-│  │  ├─ ezgif-frame-095.png
-│  │  ├─ ezgif-frame-096.png
-│  │  ├─ ezgif-frame-097.png
-│  │  ├─ ezgif-frame-098.png
-│  │  ├─ ezgif-frame-099.png
-│  │  ├─ ezgif-frame-100.png
-│  │  ├─ ezgif-frame-101.png
-│  │  ├─ ezgif-frame-102.png
-│  │  ├─ ezgif-frame-103.png
-│  │  ├─ ezgif-frame-104.png
-│  │  ├─ ezgif-frame-105.png
-│  │  ├─ ezgif-frame-106.png
-│  │  ├─ ezgif-frame-107.png
-│  │  ├─ ezgif-frame-108.png
-│  │  ├─ ezgif-frame-109.png
-│  │  ├─ ezgif-frame-110.png
-│  │  ├─ ezgif-frame-111.png
-│  │  ├─ ezgif-frame-112.png
-│  │  ├─ ezgif-frame-113.png
-│  │  ├─ ezgif-frame-114.png
-│  │  ├─ ezgif-frame-115.png
-│  │  ├─ ezgif-frame-116.png
-│  │  ├─ ezgif-frame-117.png
-│  │  ├─ ezgif-frame-118.png
-│  │  ├─ ezgif-frame-119.png
-│  │  ├─ ezgif-frame-120.png
-│  │  ├─ ezgif-frame-121.png
-│  │  ├─ ezgif-frame-122.png
-│  │  ├─ ezgif-frame-123.png
-│  │  ├─ ezgif-frame-124.png
-│  │  ├─ ezgif-frame-125.png
-│  │  ├─ ezgif-frame-126.png
-│  │  ├─ ezgif-frame-127.png
-│  │  ├─ ezgif-frame-128.png
-│  │  ├─ ezgif-frame-129.png
-│  │  ├─ ezgif-frame-130.png
-│  │  ├─ ezgif-frame-131.png
-│  │  ├─ ezgif-frame-132.png
-│  │  ├─ ezgif-frame-133.png
-│  │  ├─ ezgif-frame-134.png
-│  │  ├─ ezgif-frame-135.png
-│  │  ├─ ezgif-frame-136.png
-│  │  ├─ ezgif-frame-137.png
-│  │  ├─ ezgif-frame-138.png
-│  │  ├─ ezgif-frame-139.png
-│  │  ├─ ezgif-frame-140.png
-│  │  ├─ ezgif-frame-141.png
-│  │  ├─ ezgif-frame-142.png
-│  │  ├─ ezgif-frame-143.png
-│  │  ├─ ezgif-frame-144.png
-│  │  ├─ ezgif-frame-145.png
-│  │  ├─ ezgif-frame-146.png
-│  │  ├─ ezgif-frame-147.png
-│  │  ├─ ezgif-frame-148.png
-│  │  ├─ ezgif-frame-149.png
-│  │  ├─ ezgif-frame-150.png
-│  │  ├─ ezgif-frame-151.png
-│  │  ├─ ezgif-frame-152.png
-│  │  ├─ ezgif-frame-153.png
-│  │  ├─ ezgif-frame-154.png
-│  │  ├─ ezgif-frame-155.png
-│  │  ├─ ezgif-frame-156.png
-│  │  ├─ ezgif-frame-157.png
-│  │  ├─ ezgif-frame-158.png
-│  │  ├─ ezgif-frame-159.png
-│  │  └─ ezgif-frame-160.png
-│  ├─ events
-│  │  ├─ bottle.png
-│  │  ├─ core.png
-│  │  ├─ green.png
-│  │  ├─ hoodie.png
-│  │  ├─ id card.jpeg
-│  │  └─ inaug.png
-│  ├─ gradient.png
-│  ├─ members
-│  │  ├─ alice.jpg
-│  │  ├─ alice.png
-│  │  └─ core_team
-│  │     └─ web_development
-│  │        └─ anurag.png
-│  ├─ profileFrames
-│  │  ├─ frame1.png
-│  │  └─ frame2.png
-│  └─ vite.svg
-├─ README.md
-├─ src
-│  ├─ App.jsx
-│  ├─ assets
-│  │  ├─ images
-│  │  │  ├─ ARVRHubLogo.png
-│  │  │  ├─ cursor.png
-│  │  │  └─ message.png
-│  │  └─ react.svg
-│  ├─ components
-│  │  ├─ About.jsx
-│  │  ├─ Benefits.jsx
-│  │  ├─ BoxReveal.jsx
-│  │  ├─ Calendar.jsx
-│  │  ├─ Card.jsx
-│  │  ├─ CharacterSequence.jsx
-│  │  ├─ ClubHistory.jsx
-│  │  ├─ FlipWords.jsx
-│  │  ├─ Footer.jsx
-│  │  ├─ Header.jsx
-│  │  ├─ Hero.jsx
-│  │  ├─ MarqueeText.jsx
-│  │  ├─ OrganizationFile.jsx
-│  │  ├─ PixelImage.jsx
-│  │  ├─ registry
-│  │  │  └─ magicui
-│  │  │     └─ scroll-based-velocity.tsx
-│  │  ├─ TerminalAnimation.jsx
-│  │  └─ ui
-│  │     ├─ arc-timeline.jsx
-│  │     ├─ box-reveal.jsx
-│  │     ├─ button.jsx
-│  │     ├─ Calendar.jsx
-│  │     ├─ file-tree.jsx
-│  │     ├─ flickering-grid.jsx
-│  │     ├─ google-gemini-effect.jsx
-│  │     ├─ interactive-grid-pattern.jsx
-│  │     ├─ iphone-15-pro.jsx
-│  │     ├─ magic-card.jsx
-│  │     ├─ pixel-image.jsx
-│  │     └─ terminal.jsx
-│  ├─ data
-│  │  ├─ members.json
-│  │  └─ timelineData.js
-│  ├─ index.css
-│  ├─ lib
-│  │  └─ utils.js
-│  ├─ main.jsx
-│  └─ pages
-│     ├─ EventsPage.jsx
-│     ├─ Home.jsx
-│     ├─ LegacyTeams.css
-│     ├─ LegacyTeams.jsx
-│     └─ Teams.jsx
-├─ tailwind.config.js
-├─ vercel.json
-└─ vite.config.js
-
+ARVR-Hub-BMSIT/
+├── public/                # Static assets
+├── src/
+│   ├── assets/            # Images & media
+│   ├── components/        # Reusable UI elements
+│   ├── data/              # Static data
+│   ├── lib/               # Helper functions
+│   ├── pages/             # Main website pages
+│   ├── App.jsx            # Root app
+│   ├── main.jsx           # Entry point
+│   └── index.css          # Global styles
+├── package.json           # Dependencies
+├── tailwind.config.js     # Tailwind setup
+├── vite.config.js         # Vite setup
+└── README.md              # Documentation
 ```
+
+---
+
+## 🌍 Deployment  
+
+We deploy using **Vercel** for simplicity and speed.  
+Every push to `main` automatically updates the live site.  
+
+---
+
+## 👥 About the Club  
+
+The **AR/VR Hub of BMSIT&M** is a student-run community that:  
+
+- Organizes **workshops and hands-on sessions**  
+- Builds **innovative projects in AR/VR**  
+- Encourages **collaboration and research** in immersive tech  
+
+---
+
+## 📲 Club Contacts & Social Links  
+
+Stay connected with us:  
+
+- 📸 Instagram: [@arvrhub_bmsit](https://instagram.com/arvrhub_bmsit)  
+- 💼 LinkedIn: [AR/VR Hub – BMSIT&M](https://linkedin.com/company/arvrhub-bmsit)  
+- 💻 GitHub: [ARVR-Hub-BMSIT](https://github.com/ARVR-Hub-BMSIT)  
+- 📧 Email: arvrhub@bmsit.in  
+
+---
+
+## 🙌 Acknowledgements  
+
+- **BMS Institute of Technology & Management** for supporting student initiatives.  
+- All the **core members and contributors** of the AR/VR Hub.  
+- Open-source tools (React, Tailwind, Vite) that power this project.  
+
+---
+
+## 📃 License  
+
+This project is open-source under the [MIT License](LICENSE).  
+
+---
+
+## 🤝 Contributing  
+
+We welcome contributions from **club members and alumni** 🎓  
+
+1. Star this repo
+2. Fork the repo  
+3. Create a branch (`git checkout -b feature-name`)  
+4. Make changes & commit  
+5. Push and open a Pull Request  
