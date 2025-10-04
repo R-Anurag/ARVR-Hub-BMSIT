@@ -210,23 +210,6 @@ const EventsPage = () => {
 
                       {/* Event Details */}
                       <div className="space-y-4">
-                        <h3 className="text-xl font-semibold text-purple-200 group-hover:text-white transition-colors duration-300">
-                          {event.title
-                            .split(" ")
-                            .map(
-                              (word) =>
-                                word.charAt(0) + word.slice(1).toLowerCase()
-                            )
-                            .join(" ")}
-                        </h3>
-                        <div className="text-gray-300 mb-4">
-                          <p className="text-sm font-medium text-purple-300">
-                            {event.date} | {event.time}
-                          </p>
-                          <p className="text-sm font-medium text-purple-300">
-                            In Person: {event.location}
-                          </p>
-                        </div>
                         <p className="text-gray-300 text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                           {event.description}
                         </p>
